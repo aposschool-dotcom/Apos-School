@@ -1,0 +1,6 @@
+{
+  "name": "APOS School - Ameer PopcornWala Online School",
+  "description": "Modern digital skills education platform offering practical courses in AI, Digital Marketing, Freelancing, and Kids AI Literacy with hands-on project learning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
