@@ -25,7 +25,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
     { name: 'Courses', href: '#courses' },
     { name: 'APOS Kids', href: '#kids-school', highlight: true },
     { name: 'Why APOS', href: '#why-us' },
-    { name: 'Stories', href: '#success-stories' },
+    { name: 'Reviews', href: '#facebook-reviews' },
+    { name: 'Free Classes', href: '#free-classes', highlight: true },
     { name: 'Fee Plan', href: '#fee-enrollment' },
     { name: 'FAQ', href: '#faq' },
   ];

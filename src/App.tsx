@@ -6,8 +6,9 @@ import { PhilosophySection } from './components/PhilosophySection';
 import { CoursesSection } from './components/CoursesSection';
 import { KidsSchoolSection } from './components/KidsSchoolSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
-import { SuccessStories } from './components/SuccessStories';
+import { FacebookReviewsSection } from './components/FacebookReviewsSection';
 import { CommunitySection } from './components/CommunitySection';
+import { FreeClassesSection } from './components/FreeClassesSection';
 import { PricingSection } from './components/PricingSection';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
@@ -67,11 +68,14 @@ export default function App() {
         {/* 6. Why Choose APOS School */}
         <WhyChooseUs />
 
-        {/* 7. Student Success Stories & Testimonials */}
-        <SuccessStories />
+        {/* 7. Real Student Reviews (from Facebook) */}
+        <FacebookReviewsSection />
 
         {/* 8. Learning Community */}
         <CommunitySection onOpenEnrollment={() => handleOpenEnrollment()} />
+
+        {/* 8.5 Free YouTube Classes for students who can't afford the fee */}
+        <FreeClassesSection />
 
         {/* 9. Fee & Enrollment Breakdown */}
         <PricingSection onOpenEnrollment={() => handleOpenEnrollment()} />

@@ -8,7 +8,7 @@ export const APOS_CONTACT = {
   social: {
     facebook: 'https://facebook.com',
     instagram: 'https://instagram.com',
-    youtube: 'https://youtube.com',
+    youtube: 'https://www.youtube.com/@AmeerPopcornwala',
   },
   address: 'Online School - Serving Students Across Pakistan & Worldwide',
   fee: {
@@ -19,6 +19,23 @@ export const APOS_CONTACT = {
     total10DayIntervals: 12,
   }
 };
+
+export const FREE_YOUTUBE_PLAYLISTS = [
+  {
+    id: 'graphic-video-module',
+    moduleLabel: 'Module 1: Graphic Designing & Video Editing',
+    playlistTitle: 'How to Start Freelancing (A Complete Guide) — Beginners to Advance',
+    playlistId: 'PLdsMRnK6rkWTGbXI0S9BB9L0s4feKNppe',
+    videoCount: 21,
+  },
+  {
+    id: 'digital-marketing-module',
+    moduleLabel: 'Module 2: Digital Marketing',
+    playlistTitle: 'Master Mobile Freelancing: Create and Run Ads Directly from Your Smartphone',
+    playlistId: 'PLdsMRnK6rkWSfB_iQ5Lz109uLRLa25r55',
+    videoCount: 31,
+  },
+];
 
 export const COURSES_DATA: Course[] = [
   {
@@ -279,99 +296,6 @@ export const WHY_CHOOSE_US = [
   }
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 'test-1',
-    name: 'Muhammad Usman',
-    role: 'Freelance SMM & AI Content Specialist',
-    city: 'Faisalabad',
-    course: 'AI + Digital Marketing Program',
-    story: 'Before APOS, I was confused by countless YouTube videos that never taught practical client hunting. Within 45 days of APOS hands-on training, I created a full Facebook Ads campaign for a local clothing brand and landed my first paid monthly retainer.',
-    earningsOrResult: 'Earned Rs. 65,000 in First Month',
-    platform: 'Local Business Retainer',
-    beforeAfter: {
-      before: 'Watching random tutorials with zero confidence',
-      after: 'Managing 2 active monthly ad retainers for local brands'
-    },
-    rating: 5
-  },
-  {
-    id: 'test-2',
-    name: 'Ayesha Fatima',
-    role: 'Housewife & Graphic Designer',
-    city: 'Lahore',
-    course: 'Level 1 & Level 2 Digital Skills',
-    story: 'As a mother of two, I needed a skill I could practice from home with flexible hours. APOS School’s step-by-step guidance and community support gave me the belief that I could earn with dignity from my own living room. I now design social media posts and branding for local home bakers and boutiques.',
-    earningsOrResult: 'Rs. 45,000/month from Home',
-    platform: 'Local Brands & Social Media',
-    beforeAfter: {
-      before: 'Dependent on family for every small expense',
-      after: 'Financially independent home entrepreneur with regular clients'
-    },
-    rating: 5
-  },
-  {
-    id: 'test-3',
-    name: 'Bilal Ahmed',
-    role: 'College Student & Video Editor',
-    city: 'Rawalpindi',
-    course: 'Freelancing ABCD Workshop',
-    story: 'The 410 rupee every 10th day installment plan was a lifesaver for my student pocket money. APOS taught me how to reach out to local Pakistani business owners, create sample reels for restaurants, and close paid monthly video editing packages.',
-    earningsOrResult: 'Rs. 55,000/month from 3 Local Clients',
-    platform: 'Direct Client Outreach',
-    beforeAfter: {
-      before: 'No idea how to find paying clients in the local market',
-      after: 'Handling monthly video reels for 3 local cafes and shops'
-    },
-    rating: 5
-  },
-  {
-    id: 'test-4',
-    name: 'Hamza Tariq',
-    role: 'E-commerce Media Buyer',
-    city: 'Karachi',
-    course: 'SMM Batch Programs',
-    story: 'Facebook ads always felt like gambling until APOS explained audience targeting and ad spend optimization. My ROAS jumped from 1.5x to 4.2x on real product tests for local Shopify and retail businesses in Pakistan.',
-    earningsOrResult: 'Generated Rs. 850k+ in client store revenue',
-    platform: 'Meta Ads Manager (Pakistan)',
-    beforeAfter: {
-      before: 'Wasting ad budget with zero conversions',
-      after: 'Predictable ad scaling with confident data analysis'
-    },
-    rating: 5
-  },
-  {
-    id: 'test-5',
-    name: 'Mrs. Tahira & Rayan (Age 11)',
-    role: 'APOS Kids School Parent',
-    city: 'Islamabad',
-    course: 'APOS Kids School',
-    story: 'My son was addicted to mobile games. Enrolling him in APOS Kids School transformed him. He now creates his own game sprites and builds simple AI stories. The mentors are patient, loving, and truly encouraging.',
-    earningsOrResult: 'Built 3 playable games & 1 portfolio website',
-    platform: 'Kids AI Showcase',
-    beforeAfter: {
-      before: 'Hours of unproductive screen scrolling',
-      after: 'Young digital creator with proud school presentations'
-    },
-    rating: 5
-  },
-  {
-    id: 'test-6',
-    name: 'Zeeshan Ali',
-    role: 'Digital Marketing & Client Specialist',
-    city: 'Multan',
-    course: 'AI + Digital Marketing Program',
-    story: 'APOS taught us practical direct client pitching through WhatsApp and Instagram for local businesses. I closed two real estate agencies for social media management in Multan within two weeks of completing the course.',
-    earningsOrResult: 'Rs. 70,000 Monthly Retainer',
-    platform: 'Local Business Outreach',
-    beforeAfter: {
-      before: 'Struggling to find paying local clients',
-      after: 'Managing marketing for 2 real estate firms in Multan'
-    },
-    rating: 5
-  }
-];
-
 export const FAQS: FaqItem[] = [
   {
     question: 'What is APOS School?',
@@ -400,5 +324,111 @@ export const FAQS: FaqItem[] = [
   {
     question: 'How do I enroll or get in touch?',
     answer: 'You can easily click the "Enroll Now" button on this website or reach out directly to our official WhatsApp support number at 0307-1639292. Our admissions team will guide you through batch timing and payment confirmation.'
+  }
+];
+
+export interface FacebookReview {
+  name: string;
+  date: string;
+  batch?: string;
+  text: string;
+}
+
+export const FACEBOOK_REVIEWS: FacebookReview[] = [
+  {
+    name: 'Hani Afzal',
+    date: '20 June',
+    text: 'مجھے بہت فخر ہے کہ میں APOS کا حصہ بنی۔ میں شروع پی ہی سے اپنی زندگی میں کچھ منفرد کرنا چاہتی تھی، مالی طور پر خود مختار ہونا چاہتی تھی اور میرے خواب بھی بڑے تھے لیکن کوئی راستہ دکھانے والا نہیں تھا۔ اسی تلاش میں، میں نے APOS (امیر پاپ کارن والا اسکول) کو جوائن کیا۔ ان کی رہنمائی کیریئر اسکلز تک محدود نہیں بلکہ انہوں نے ہمارے اندر زندگی جینے کا ایک نیا حوصلہ پیدا کیا۔ دل سے دعائیں APOS کی پوری ٹیم کے لیے۔'
+  },
+  {
+    name: 'Hina Anwar',
+    date: '17 September 2024',
+    batch: 'Batch #25',
+    text: 'I had the honour of learning from Sir Ameer Popcornwala, the CEO of APOS, who guided me how to become a freelancer using an Android phone. As a student of Sir Ameer, I gained valuable knowledge in Canva, Social Media Marketing, AI. Beyond technical skills, I also learned life values like positivity and personal growth. I highly recommend APOS to everyone to expand their skills.'
+  },
+  {
+    name: 'Farzana Khan',
+    date: '17 September 2024',
+    text: "My journey with APOS has been nothing short of amazing! The guidance and expertise provided by Sir Ameer have made a significant impact on my learning experience. His teaching methods are clear, engaging, and truly insightful, helping me gain both knowledge and confidence. The whole staff of APOS provides a supportive and encouraging environment, and I always feel motivated to push my limits."
+  },
+  {
+    name: 'Sidra (Ahmed Hamdan)',
+    date: '17 September 2024',
+    text: "Being a student of this school I wanted to say the dedication to nurturing minds is truly remarkable. The learning experience at APOS is amazing. Thanks to APOS online school, I've gained skills that have boosted my confidence and opened up new opportunities in design and marketing. APOS truly delivers on its promise of transforming beginners into professionals, all while making learning enjoyable and accessible!"
+  },
+  {
+    name: 'Sadaf Qutaiba',
+    date: '22 June 2024',
+    batch: "Sir Ameer's Canva Fiverr Course, Batch 22",
+    text: "I'm thrilled to share my experience with Sir Ameer (the \"Popcorn Wala\") and Mam Razia Durrani. My journey on Facebook began in 2008, and I've been searching for a mentor and a platform like this for 5-6 years. Despite learning a lot on my own, I couldn't find a platform that offered such comprehensive training at an affordable price. Sir Ameer's Canva classes and Mam Razia Durrani's Social Media Marketing course have been a game-changer for me."
+  },
+  {
+    name: 'Muhammad Ejaz',
+    date: '22 June 2024',
+    text: 'میں امیر پاپ کارن والا آن لائن سکول کا سٹوڈنٹ ہوں اور مجھے یہاں پڑھنے کا بہترین تجربہ حاصل ہوا ہے۔ اس سکول کے ٹیچرز نہایت قابل اور محنتی ہیں، جو ہر مضمون کو دلچسپ انداز میں سمجھانے کی صلاحیت رکھتے ہیں۔ یہاں کی آن لائن کلاسز نہایت منظم اور پُراثر ہیں، جو ہمیں گھروں میں بیٹھ کر بہترین تعلیم فراہم کرتی ہیں۔ اگر آپ معیاری تعلیم چاہتے ہیں تو امیر پاپ کارن والا آن لائن سکول کو ضرور منتخب کریں۔'
+  },
+  {
+    name: 'Memoona Rubab',
+    date: '30 April 2024',
+    text: 'Highly recommended! AMEER POPCORNWALA ONLINE SCHOOL is a life changing online school where you learn how to earn 1 lac per month. Alhumdulilah I am student of AMEER POPCORNWALA ONLINE SCHOOL and now I am earning more than 1 lac per month. Thank you very much Sir Ameer Popcornwala and all teachers.'
+  },
+  {
+    name: 'Tasleem Sarwar',
+    date: '22 December 2023',
+    text: 'السلام علیکم۔ امیر پاپکارن والا سکول، ایسا سکول جہاں سب سے پہلے آپ کو پہچان کروائی جاتی ہے، اعتماد اور ہمت اور حوصلہ دیا جاتا ہے، اور پھر جینے اور کمانے دونوں کے ہنر سکھائے جاتے ہیں۔ آپ کو نہ صرف اچھے قدم پر قدم پر مخلص رہنمائی کرنے والا استاد ملتا ہے بلکہ ایسا محسوس ہوتا ہے کہ آپ کے بھائی بہن کے لیے مخلصانہ مشورہ دیا جا رہا ہے۔ اس سکول نے سب کی رہنمائی نے ہمیں بہت اعتماد پر قابل بنایا اور جزاک اللہ خیرا کثیرا۔'
+  },
+  {
+    name: 'Waseem Ghori',
+    date: '22 June 2024',
+    text: "While praising my teacher and their online school, I want to say that I have learned a lot from their hard work and knowledge. Their analytical approach and dedication provide me with answers to every question. I am thoroughly impressed by the method of my teacher's online school. It is a platform where education is imparted with creativity and innovative methods."
+  },
+  {
+    name: 'Shamim Bilal',
+    date: '22 June 2024',
+    text: 'Sir Ameer is an exemplary and experienced educator who guides his students into the world of freelancing. His teachings have brought about immensely positive changes in the lives of his students. With his approach, Professor Ameer has not only made learning easy but has also left no gaps in their spiritual upbringing. He guides his students through every difficulty, always providing them with guidance and opportunities for solutions and success.'
+  },
+  {
+    name: 'Abdul Ghaffar Balli',
+    date: '23 June 2024',
+    text: 'Ameer Sahb is a very great full person, his method of teaching is very easy & humble. He answers the student questions very politely, in Ameer Popcornwala Online School the environment of students among the teachers is very happy. You ask everything without any hesitation. Thanks Sir for being our teacher.'
+  },
+  {
+    name: 'M Arshad',
+    date: '23 June 2024',
+    text: 'Sir Ameer taught us in a very excellent manner and explained everything very well. His way of explaining is very good, and his environment is also very conducive to learning. We learned a lot, not just graphic designing and social media, digital marketing, etc., but much more beyond that. We learned how to have a positive mindset, how to make good friends, how to improve our relationships with our people.'
+  },
+  {
+    name: 'Sadia Sibghat',
+    date: '23 June 2024',
+    batch: 'Batch 23',
+    text: "I watched so many videos but when I watched Sir Ameer's video I thought I should start from here. I learned so many things. I was thinking that I can't do it but the way Sir Ameer explained, the way he tells and discusses in different sessions he made me able to understand. Sir Ameer's teaching style is very simple and attractive, I highly recommend this school if you want to learn freelancing."
+  },
+  {
+    name: 'Sana Aatif',
+    date: '23 June 2024',
+    text: 'My experience with Sir Ameer Popcorn Wala School has been absolutely amazing! They taught me Canva with exceptional clarity and detail, making every concept easy to understand. Sir Ameer\u2019s teaching style is highly engaging and interactive, which helped me quickly grasp all the features and techniques of Canva. His friendly and supportive attitude constantly inspired me.'
+  },
+  {
+    name: 'M. Afzal Mughal (Empire Digital)',
+    date: '26 June 2024',
+    batch: "Sir Ameer's Canva Fiverr Course, Batch 22",
+    text: "I'm thrilled to share my experience with Sir Ameer (the \"Popcorn Wala\") and Mam Razia Durrani. My journey on Facebook began in 2020 and I've been searching for a mentor and a platform like this for 3-4 years. That's why I'm so grateful to have found Sir Ameer Popcornwala Online School, where I could learn from experienced instructors at a nominal fee - literally below nominal!"
+  },
+  {
+    name: 'Shafqat Khan',
+    date: '17 September 2024',
+    text: 'Assalaam u Alaikum, Main Shafqat Khan hoon aur District Gujrat se belong karta hoon. Aaj se 2 saal pehle maine Sir Ameer Popcornwala se Canva + Fiverr ka course kiya aur uske baad unhein ke school se Social Media Marketing ka course bhi kiya. Tamam courses boht shandaar thy, nehayat ache andaz se seekhaya gaya aur aaj bhi jab bhi mujhe support ki zarorat hoti hai Sir Ameer hazir ho jate hain.'
+  },
+  {
+    name: 'Saher Shafique',
+    date: '17 September 2024',
+    batch: 'Batch 23',
+    text: "Ameer Popcornwala Online School has been a game-changer for my education. The school offers a flexible and engaging learning environment, perfect for anyone looking to grow academically. The lessons are well-structured, and the interactive approach really helps in understanding difficult concepts. The quality of education is top-notch, and the convenience of learning from home has made it so much easier for me to stay consistent."
+  },
+  {
+    name: 'Nida Abid',
+    date: '17 September 2024',
+    batch: 'Batch 23',
+    text: "Sir ke 1 cheez positive thought convert krna apne students me bhoot acha he. Zindagi kabi kabi stuck ho jati he or kesi ese insan ki batye jinhe sun kr dobara koi umeed ki kiran nazar aye...ese insan hona bhot zaroori hota he zindagi me. I'm graphic designer and digital marketer, boht kuch seekhna he apse."
   }
 ];

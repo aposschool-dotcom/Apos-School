@@ -69,8 +69,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnrollment }) => {
                 </a>
               </li>
               <li>
-                <a href="#success-stories" className="hover:text-amber-400 transition-colors">
-                  Student Stories
+                <a href="#facebook-reviews" className="hover:text-amber-400 transition-colors">
+                  Student Reviews
                 </a>
               </li>
             </ul>

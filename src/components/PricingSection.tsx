@@ -214,6 +214,30 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
 
         </div>
 
+        {/* Free YouTube Alternative for students who can't afford the fee */}
+        <div className="max-w-4xl mx-auto mt-8 p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div className="shrink-0 w-14 h-14 rounded-2xl bg-amber-400 flex items-center justify-center">
+            <Zap className="w-7 h-7 text-slate-950" />
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <div className="text-lg font-extrabold text-white">
+              Can't Afford The Fee Right Now? Learn For Free.
+            </div>
+            <p className="text-sm text-slate-300 mt-1.5 leading-relaxed">
+              No student should be stopped by money. Every class from this course is taught completely free
+              on our YouTube channel, <span className="text-amber-400 font-semibold">Ameer PopcornWala</span> —
+              learn the exact same skills at your own pace, at zero cost.
+            </p>
+          </div>
+          <a
+            href="#free-classes"
+            className="w-full sm:w-auto shrink-0 px-6 py-3.5 rounded-xl font-bold text-sm bg-amber-400 text-slate-950 hover:bg-amber-300 active:scale-95 transition-all flex items-center justify-center gap-2"
+          >
+            Watch Free Classes
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+
       </div>
     </section>
   );
