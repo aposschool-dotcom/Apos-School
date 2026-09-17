@@ -432,3 +432,101 @@ export const FACEBOOK_REVIEWS: FacebookReview[] = [
     text: "Sir ke 1 cheez positive thought convert krna apne students me bhoot acha he. Zindagi kabi kabi stuck ho jati he or kesi ese insan ki batye jinhe sun kr dobara koi umeed ki kiran nazar aye...ese insan hona bhot zaroori hota he zindagi me. I'm graphic designer and digital marketer, boht kuch seekhna he apse."
   }
 ];
+
+export const KIDS_ADMISSIONS_WHATSAPP = 'https://wa.me/923091639292?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20get%20information%20about%20APOS%20Kids%20AI%20Innovator%20Program%20admission.';
+export const KIDS_ADMISSIONS_PHONE_FORMATTED = '0309-1639292';
+
+export interface KidsLevel {
+  id: string;
+  levelNumber: number;
+  title: string;
+  duration: string;
+  topics: string[];
+  totalFeePKR: number;
+  monthlyFeePKR: number;
+  installments: number;
+  eligibilityNote?: string;
+  capstone?: string;
+}
+
+export const KIDS_AI_INNOVATOR_PROGRAM = {
+  title: 'AI Innovator Program',
+  tagline: 'Six-Month Learning Pathway — Learn, Build, Deploy, Market, Grow',
+  description: 'A practical, project-based pathway for future-ready young learners. The program develops skills in a deliberate sequence: students first learn how to work with AI, then build and publish real digital projects, and finally learn how to present, market and responsibly monetize those skills.',
+  levels: [
+    {
+      id: 'level-1',
+      levelNumber: 1,
+      title: 'Foundational AI Skills',
+      duration: '2 Months',
+      topics: [
+        'Prompt engineering',
+        'AI content creation',
+        'Graphic design fundamentals',
+        'Introductory web concepts',
+        'Responsible AI use',
+      ],
+      totalFeePKR: 2500,
+      monthlyFeePKR: 1250,
+      installments: 2,
+    },
+    {
+      id: 'level-2',
+      levelNumber: 2,
+      title: 'AI Development and Deployment',
+      duration: '2 Months',
+      topics: [
+        'Websites and functional apps',
+        'Git and GitHub workflows',
+        'AI-assisted coding (ChatGPT, Codex, Google AI Studio)',
+        'Deployment and testing (GitHub Pages, Vercel, Netlify)',
+        'Advanced AI video projects',
+      ],
+      totalFeePKR: 3000,
+      monthlyFeePKR: 1500,
+      installments: 2,
+      eligibilityNote: 'Requires successful completion of Level 1 or an approved skills assessment. A laptop is required.',
+      capstone: 'Each student builds and deploys one complete website or useful app, maintains its GitHub repository, creates a short demonstration video, and presents the finished project.',
+    },
+    {
+      id: 'level-3',
+      levelNumber: 3,
+      title: 'AI Marketing and Entrepreneurship',
+      duration: '2 Months',
+      topics: [
+        'Digital business foundations & AI branding',
+        'Content planning and social media marketing',
+        'Paid advertising concepts and campaign metrics',
+        'Sales communication and customer care',
+        'Track A: E-Commerce & Social Commerce, or Track B: Digital Services Business',
+      ],
+      totalFeePKR: 3000,
+      monthlyFeePKR: 1500,
+      installments: 2,
+      capstone: 'Each student prepares a brand identity, practical offer, content campaign, sales process, portfolio or store presence, and a parent-supervised 30-day launch plan.',
+    },
+  ] as KidsLevel[],
+  learningModel: [
+    'Three live online classes per week with guided practice and assignments',
+    'Project-based learning: students demonstrate skills by building, presenting and improving real work',
+    'Progress is based on participation, assignments, project quality and responsible technology use',
+    'Public accounts, payments, client communication and selling activities require parent or guardian supervision',
+  ],
+  eligibility: [
+    'Level 2 entry requires successful completion of Level 1 or an approved skills assessment',
+    'A laptop is required for coding, GitHub, deployment and practical Level 2 projects',
+    'Students need a stable internet connection and must attend live online classes regularly',
+    'Assignments and capstone projects must be completed to demonstrate learning outcomes',
+    'Parent or guardian supervision is required for public accounts, payments, client work and business activities',
+  ],
+  outcomes: [
+    'Plan and build responsive websites with AI-assisted development tools',
+    'Create simple functional apps and connect introductory data or API features',
+    'Use GitHub to organize projects and publish work online',
+    'Test, debug and improve projects instead of copying AI output blindly',
+    'Produce advanced educational or promotional videos with responsible AI workflows',
+    'Create a brand, content plan and digital marketing campaign',
+    'Choose an e-commerce, social-commerce or digital-services pathway',
+    'Prepare a portfolio, business offer and supervised 30-day launch plan',
+  ],
+};

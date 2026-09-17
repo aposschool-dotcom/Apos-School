@@ -1,5 +1,6 @@
 import React from 'react';
 import { KIDS_PROGRAM } from '../data/aposData';
+import { KidsProgramLevels } from './KidsProgramLevels';
 import {
   Sparkles,
   Cpu,
@@ -98,6 +99,9 @@ export const KidsSchoolSection: React.FC<KidsSchoolSectionProps> = ({ onEnrollKi
           })}
         </div>
 
+      <KidsProgramLevels />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Reassurance & Enrollment CTA for Parents */}
         <div className="rounded-3xl bg-slate-900 text-white p-8 sm:p-12 shadow-2xl relative overflow-hidden">
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -139,6 +143,7 @@ export const KidsSchoolSection: React.FC<KidsSchoolSectionProps> = ({ onEnrollKi
           </div>
         </div>
 
+      </div>
       </div>
     </section>
   );
