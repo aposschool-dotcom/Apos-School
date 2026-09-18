@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { KIDS_AI_INNOVATOR_PROGRAM, KIDS_ADMISSIONS_WHATSAPP, KIDS_ADMISSIONS_PHONE_FORMATTED } from '../data/aposData';
 import {
-  CheckCircle2, GraduationCap, Users, ShieldCheck, Download, MessageCircle, Lock,
+  CheckCircle2, GraduationCap, Users, ShieldCheck, Download, MessageCircle, Lock, PlayCircle,
 } from 'lucide-react';
 
 export const KidsProgramLevels: React.FC = () => {
@@ -24,6 +24,25 @@ export const KidsProgramLevels: React.FC = () => {
           <p className="text-slate-600 leading-relaxed">
             {KIDS_AI_INNOVATOR_PROGRAM.description}
           </p>
+        </div>
+
+        {/* Parent explainer video */}
+        <div className="max-w-3xl mx-auto mb-14">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <PlayCircle className="w-5 h-5 text-red-600" />
+            <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 text-center">
+              آپ کے بچے کو یہاں کیا سکھایا جائے گا؟ مکمل تعارف دیکھیں
+            </h3>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-video">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/Z8TMhiDofYo"
+              title="آپ کے بچے کو یہاں کیا سکھایا جائے گا؟ مکمل تعارف"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
 
         {/* Level tab selector */}
