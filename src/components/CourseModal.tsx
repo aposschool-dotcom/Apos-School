@@ -86,24 +86,63 @@ export const CourseModal: React.FC<CourseModalProps> = ({
             </p>
           </div>
 
+          {course.eligibilityNote && (
+            <div className="flex items-start gap-2.5 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800">
+              <span>🔒</span>
+              <span>{course.eligibilityNote}</span>
+            </div>
+          )}
+
           {/* Syllabus Topics */}
           <div className="space-y-3">
             <h4 className="text-xs font-extrabold uppercase tracking-wider text-slate-400">
               Complete Syllabus & Modules
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {course.topics.map((topic, i) => (
-                <div
-                  key={topic}
-                  className="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs text-slate-800"
-                >
-                  <span className="font-mono font-bold text-amber-600 shrink-0">
-                    {i + 1 < 10 ? `0${i + 1}` : i + 1}.
-                  </span>
-                  <span>{topic}</span>
-                </div>
-              ))}
-            </div>
+
+            {course.modules && course.modules.length > 0 ? (
+              <div className="space-y-4">
+                {course.modules.map((mod, mi) => (
+                  <div key={mod.title} className="rounded-2xl border border-slate-200 overflow-hidden">
+                    <div className="bg-slate-900 px-4 py-3">
+                      <div className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-900 flex items-center justify-center text-xs font-black shrink-0">
+                          {mi + 1}
+                        </span>
+                        <span className="text-sm font-extrabold text-white">{mod.title}</span>
+                      </div>
+                      {mod.subtitle && (
+                        <p className="text-[11px] text-slate-400 mt-1 pl-8">{mod.subtitle}</p>
+                      )}
+                    </div>
+                    <div className="p-3 space-y-2 bg-white">
+                      {mod.items.map((item) => (
+                        <div
+                          key={item}
+                          className="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs text-slate-800"
+                        >
+                          <CheckCircle2 className="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {course.topics.map((topic, i) => (
+                  <div
+                    key={topic}
+                    className="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 text-xs text-slate-800"
+                  >
+                    <span className="font-mono font-bold text-amber-600 shrink-0">
+                      {i + 1 < 10 ? `0${i + 1}` : i + 1}.
+                    </span>
+                    <span>{topic}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Practical Projects */}

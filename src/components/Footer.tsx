@@ -1,7 +1,7 @@
 import React from 'react';
 import { AposLogo } from './AposLogo';
 import { APOS_CONTACT } from '../data/aposData';
-import { Phone, MessageCircle, Mail, Heart } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Heart, Smartphone } from 'lucide-react';
 
 interface FooterProps {
   onOpenEnrollment: () => void;
@@ -21,8 +21,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnrollment }) => {
                 <span className="font-extrabold text-xl tracking-tight text-white block">
                   APOS <span className="text-amber-400">School</span>
                 </span>
-                <span className="text-[11px] font-semibold text-slate-400 tracking-wider uppercase block">
-                  Ameer PopcornWala Online School
+                <span className="text-[11px] font-semibold text-amber-400 tracking-wider uppercase flex items-center gap-1.5">
+                  <Smartphone className="w-3 h-3" />
+                  Pakistan's First Mobile Freelancing School
                 </span>
               </div>
             </div>
@@ -82,11 +83,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnrollment }) => {
               Core Programs
             </h4>
             <ul className="space-y-2 text-xs">
-              <li className="text-slate-300">AI + Digital Marketing Program</li>
-              <li className="text-slate-300">Freelancing ABCD Workshop</li>
-              <li className="text-slate-300">Level 1 Digital Skills Program</li>
-              <li className="text-slate-300">Level 2 Advanced Learning Program</li>
-              <li className="text-slate-300">SMM Batch Programs</li>
+              <li className="text-slate-300">Freelancing Foundation with AI</li>
+              <li className="text-slate-300">AI + Digital Marketing Program (Main)</li>
+              <li className="text-slate-300">Social Commerce with AI (Level 2 — Coming Soon)</li>
               <li className="text-amber-400 font-semibold">APOS Kids AI & Creativity Wing</li>
             </ul>
           </div>

@@ -1,3 +1,9 @@
+export interface CourseModule {
+  title: string;
+  subtitle?: string;
+  items: string[];
+}
+
 export interface Course {
   id: string;
   title: string;
@@ -8,9 +14,12 @@ export interface Course {
   badge?: string;
   description: string;
   topics: string[];
+  modules?: CourseModule[];
   projects: string[];
   targetAudience: string;
   outcome: string;
+  comingSoon?: boolean;
+  eligibilityNote?: string;
 }
 
 export interface Testimonial {

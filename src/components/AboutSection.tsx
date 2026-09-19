@@ -9,7 +9,8 @@ import {
   CheckCircle,
   Lightbulb,
   ShieldCheck,
-  Sparkles
+  Sparkles,
+  Smartphone
 } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
@@ -62,8 +63,10 @@ export const AboutSection: React.FC = () => {
           </h2>
           
           <p className="text-lg text-slate-600 leading-relaxed">
-            APOS School (Ameer PopcornWala Online School) is a digital learning platform where students learn
-            practical skills according to modern market demands. We bridge the gap between conventional academia
+            APOS School (Ameer PopcornWala Online School) is <strong className="text-slate-800 inline-flex items-center gap-1">
+              <Smartphone className="w-4 h-4 text-amber-500" />Pakistan's first mobile freelancing school</strong> —
+            a digital learning platform where students learn practical skills according to modern market demands,
+            entirely from their mobile phones. We bridge the gap between conventional academia
             and real-world earning capability.
           </p>
         </div>

@@ -11,7 +11,8 @@ import {
   TrendingUp,
   Laptop,
   Briefcase,
-  Zap
+  Zap,
+  Smartphone
 } from 'lucide-react';
 
 interface HeroProps {
@@ -37,7 +38,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment, onExploreCourses }
               <span className="flex h-2 w-2 rounded-full bg-amber-400 animate-ping"></span>
               <span className="font-semibold text-amber-400">APOS School</span>
               <span className="text-slate-400">•</span>
-              <span className="text-slate-300">Ameer PopcornWala Online School</span>
+              <Smartphone className="w-3.5 h-3.5 text-amber-300" />
+              <span className="text-slate-300">Pakistan's First Mobile Freelancing School</span>
             </div>
 
             {/* Main Headline */}

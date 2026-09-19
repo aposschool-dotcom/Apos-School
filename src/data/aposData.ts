@@ -41,39 +41,64 @@ export const COURSES_DATA: Course[] = [
   {
     id: 'ai-digital-marketing',
     title: 'AI + Digital Marketing Program',
-    tagline: 'Combine next-gen AI tools with powerful social advertising to scale businesses and freelance careers.',
-    duration: '2 Months (Part of 120 Days Roadmap)',
+    tagline: 'A 120-day, step-by-step roadmap — from AI Foundation to Digital Marketing to Communication Mastery — designed to get you your first paying clients.',
+    duration: '120 Days (90 Days Skill Mastery + 30 Days Communication Mastery)',
     level: 'All Levels',
     category: 'ai-marketing',
     badge: 'Flagship Program',
-    description: 'Master practical artificial intelligence workflows combined with high-converting digital marketing. Learn to craft strategies, run ROI-driven Meta campaigns, and create client-ready assets in minutes.',
+    description: 'Pakistan\'s first mobile freelancing school\'s flagship roadmap — master AI-powered graphic design and video editing, run real Facebook & Instagram marketing campaigns, and finish with a dedicated Communication Mastery month built to land your first 3 real clients.',
     topics: [
-      'Artificial Intelligence Fundamentals',
-      'Modern AI Tools & Prompt Engineering',
-      'Digital Marketing Basics & Psychology',
-      'Facebook & Instagram Ads Architecture',
-      'Social Media Marketing (SMM) Strategy',
-      'AI-Powered Content & Copywriting',
-      'Marketing Strategies & Funnel Design',
-      'Client Handling, Pitching & Proposal Writing',
-      'End-to-End Practical Projects'
+      'AI Foundation — Graphic Designing with AI (Canva + AI Tools)',
+      'AI Foundation — Video Editing with AI',
+      'Digital Marketing with AI — Facebook Management & Marketing',
+      'Digital Marketing with AI — Instagram Management & Marketing',
+      'Communication Mastery — Client Communication',
+      'Communication Mastery — Client Hunting (Land 3 Real Clients)',
+      'Communication Mastery — Ready-Made Client Proposal PDF',
+    ],
+    modules: [
+      {
+        title: 'Module 1: AI Foundation',
+        subtitle: 'Build your core creative skillset using AI-powered tools',
+        items: [
+          'Graphic Designing with AI — learn design using Canva combined with AI tools',
+          'Video Editing with AI — learn to edit professional videos using AI tools',
+        ],
+      },
+      {
+        title: 'Module 2: Digital Marketing with AI',
+        subtitle: 'Learn to manage and market on the two platforms that matter most',
+        items: [
+          'Facebook Management & Marketing',
+          'Instagram Management & Marketing',
+        ],
+      },
+      {
+        title: 'Module 3: Communication Mastery',
+        subtitle: 'A full dedicated month — because communication is the #1 skill gap in Pakistan',
+        items: [
+          'Client Communication — how to talk to and retain clients professionally',
+          'Client Hunting — a guided process to land your first 3 real clients',
+          'Client Proposal PDF — a ready-made, pre-designed proposal template you simply customize with your own name and use immediately',
+        ],
+      },
     ],
     projects: [
-      'Live Facebook Ad Campaign Setup & Pixel tracking',
-      'AI-driven Content Calendar for 30 days',
-      'Complete Client Pitch Deck & Contract Proposal'
+      'AI-Designed Graphics & Edited Video Portfolio',
+      'Live Facebook & Instagram Marketing Campaign',
+      'Your First 3 Real Client Proposals (Sent & Followed Up)'
     ],
     targetAudience: 'Students, marketers, freelancers, and small business owners wanting modern competitive edge.',
     outcome: 'Deliver high-value marketing campaigns with 5x speed using cutting-edge AI assistance.'
   },
   {
     id: 'freelancing-abcd',
-    title: 'Freelancing ABCD Workshop',
+    title: 'Freelancing Foundation with AI',
     tagline: 'A gentle, zero-jargon roadmap to understanding freelancing and landing your first paid online client.',
     duration: 'Comprehensive Workshop',
-    level: 'Beginner',
+    level: 'Foundation',
     category: 'freelancing',
-    badge: 'Best For Beginners',
+    badge: 'Foundation Level',
     description: 'A beginner-friendly introduction to the world of remote work and digital freelancing. Learn how beginners can pick in-demand skills, build a trustworthy profile, and start online earning step-by-step.',
     topics: [
       'What is Freelancing & How Independent Client Work Works',
@@ -93,82 +118,32 @@ export const COURSES_DATA: Course[] = [
     outcome: 'Clear clarity on your skillset, active service portfolio, and confident local client pitching strategy.'
   },
   {
-    id: 'level-1-digital-skills',
-    title: 'Level 1 Digital Skills Program',
-    tagline: 'Build an unshakeable digital foundation, discover your natural strengths, and master essential tools.',
-    duration: 'Foundation Phase',
-    level: 'Foundation',
-    category: 'foundation',
-    badge: 'Core Foundation',
-    description: 'Transform your mindset from passive internet consumer to an active digital creator. Build foundational computer literacy, explore modern online opportunities, and master digital productivity tools.',
-    topics: [
-      'Digital Mindset & Wealth Creation Psychology',
-      'Landscape of Modern Online Opportunities',
-      'Basic Digital Tools & Cloud Productivity',
-      'Skill Discovery & Strengths Assessment',
-      'APOS Structured Learning System',
-      'Basic Visual Design & Communication Tools',
-      'Online Research & Problem-Solving Capabilities'
-    ],
-    projects: [
-      'Digital Skills Audit & Goal Tracker',
-      'Mini Cloud Workspace Setup (Docs, Sheets, Drive, Canva)',
-      'Foundational Digital Resume / One-page Profile'
-    ],
-    targetAudience: 'Anyone seeking a solid starting point without feeling overwhelmed by technical jargon.',
-    outcome: 'Confidence navigating digital ecosystems and clarity on which specialized skill to pursue.'
-  },
-  {
     id: 'level-2-advanced-learning',
-    title: 'Level 2 Advanced Learning Program',
-    tagline: 'Deep practical learning, professional tool workflows, client assignments, and portfolio perfection.',
+    title: 'Social Commerce with AI',
+    tagline: 'Level 2 — Deep practical learning in social commerce and advanced digital marketing, powered by AI.',
     duration: 'Advanced Phase',
     level: 'Intermediate',
     category: 'advanced',
-    badge: 'Career Accelerator',
-    description: 'Move beyond basics into industry-standard execution. Work on simulated and live client assignments, master advanced automation tools, and polish your personal portfolio for high-ticket opportunities.',
+    badge: 'Coming Soon',
+    comingSoon: true,
+    description: 'Move beyond the main program into industry-standard, commercial-scale execution. Learn Social Commerce and Advanced Digital Marketing with AI, work on simulated and live client assignments, and polish your portfolio for high-ticket opportunities.',
     topics: [
+      'Social Commerce with AI',
+      'Advanced Digital Marketing with AI',
       'Advanced Industry Tools & Automation Workflows',
       'Practical Assignments with Instructor Feedback',
       'Real-world Simulated Client Projects',
       'Professional Freelancer & Agency Workflows',
-      'Continuous Skill Improvement Systems',
       'Handling Difficult Clients & Milestone Contracts',
-      'Collaborative Project Management'
     ],
     projects: [
       'Full-service Client Deliverable Portfolio',
       'Agency-Style Case Study with Metrics',
       'Automated Invoicing and Client Onboarding Pipeline'
     ],
-    targetAudience: 'Students with basic knowledge ready to elevate their craft to commercial quality.',
-    outcome: 'Ready-to-showcase commercial portfolio that positions you as a capable professional.'
-  },
-  {
-    id: 'smm-batch-programs',
-    title: 'SMM Batch Programs',
-    tagline: 'Master Social Media Marketing, Facebook campaigns, ads budgeting, and client account growth.',
-    duration: 'Specialized Batch',
-    level: 'All Levels',
-    category: 'smm',
-    badge: 'High Market Demand',
-    description: 'Focused hands-on training on social media marketing and paid advertising campaigns. Learn how to research target audiences, write persuasive ad copy, optimize budgets, and deliver measurable sales to businesses.',
-    topics: [
-      'Social Media Marketing Strategy & Brand Voice',
-      'Facebook & Instagram Ad Campaigns from Scratch',
-      'Ads Strategy: Top, Middle & Bottom of Funnel',
-      'In-Depth Audience Research & Competitor Spying',
-      'Campaign Optimization, CBO vs ABO & Scaling',
-      'Creative Testing & High-Converting Video Scripts',
-      'Client Projects & Reporting Dashboard Setup'
-    ],
-    projects: [
-      'End-to-end Meta Business Manager configuration',
-      'A/B Testing Creative Experiment for a Local Brand',
-      'Monthly Client Performance Report Template'
-    ],
-    targetAudience: 'Aspiring social media managers, agency owners, e-commerce store operators.',
-    outcome: 'Run profitable paid ad campaigns and comfortably manage social media retainers for clients.'
+    targetAudience: 'Students who have already completed our Main Program and are earning from it.',
+    outcome: 'Ready-to-showcase commercial portfolio that positions you as a capable professional.',
+    eligibilityNote: 'This level is only for students who are already earning from our Main Program (AI + Digital Marketing Program).'
   }
 ];
 
@@ -311,7 +286,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Is this only for professionals with prior technical backgrounds?',
-    answer: 'No! Beginners can start from ground zero. Programs like our "Freelancing ABCD Workshop" and "Level 1 Digital Skills Program" assume zero prior computer knowledge and take you step-by-step from fundamental concepts to confident execution.'
+    answer: 'No! Beginners can start from ground zero. Our "Freelancing Foundation with AI" program assumes zero prior computer knowledge and takes you step-by-step from fundamental concepts to confident execution before you move into the Main Program.'
   },
   {
     question: 'What is the fee and installment structure?',

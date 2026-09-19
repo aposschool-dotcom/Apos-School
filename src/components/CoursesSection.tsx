@@ -25,12 +25,10 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const categories = [
-    { id: 'all', label: 'All Courses (5)' },
-    { id: 'ai-marketing', label: 'AI & Digital Marketing' },
-    { id: 'freelancing', label: 'Freelancing Workshop' },
-    { id: 'foundation', label: 'Level 1 Foundation' },
-    { id: 'advanced', label: 'Level 2 Advanced' },
-    { id: 'smm', label: 'SMM Batch' },
+    { id: 'all', label: 'All Courses (3)' },
+    { id: 'freelancing', label: 'Freelancing Foundation' },
+    { id: 'ai-marketing', label: 'Main Program (AI + Digital Marketing)' },
+    { id: 'advanced', label: 'Social Commerce (Level 2)' },
   ];
 
   const filteredCourses = selectedCategory === 'all'
@@ -133,13 +131,24 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
                   </ul>
                 </div>
 
+                {course.eligibilityNote && (
+                  <div className="flex items-start gap-2 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2 text-[11px] text-amber-800">
+                    <span>🔒</span>
+                    <span>{course.eligibilityNote}</span>
+                  </div>
+                )}
+
               </div>
 
               {/* Card Footer Action Area */}
               <div className="p-6 bg-slate-50/70 border-t border-slate-100 space-y-3">
                 <div className="flex items-center justify-between text-xs text-slate-500 pb-1">
                   <span>Projects: <strong className="text-slate-800">{course.projects.length} Real Tasks</strong></span>
-                  <span className="text-emerald-700 font-bold">Enrollment Open</span>
+                  {course.comingSoon ? (
+                    <span className="text-amber-700 font-bold">Coming Soon</span>
+                  ) : (
+                    <span className="text-emerald-700 font-bold">Enrollment Open</span>
+                  )}
                 </div>
 
                 <div className="grid grid-cols-2 gap-2">
@@ -151,13 +160,23 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
                     <ChevronRight className="w-3.5 h-3.5" />
                   </button>
 
-                  <button
-                    onClick={() => onEnrollCourse(course.id)}
-                    className="w-full py-2.5 px-3 rounded-xl text-xs font-extrabold text-slate-950 bg-amber-400 hover:bg-amber-300 active:scale-95 transition-all shadow-xs flex items-center justify-center gap-1"
-                  >
-                    <span>Join Now</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+                  {course.comingSoon ? (
+                    <button
+                      onClick={() => onEnrollCourse(course.id)}
+                      className="w-full py-2.5 px-3 rounded-xl text-xs font-extrabold text-white bg-slate-700 hover:bg-slate-600 active:scale-95 transition-all shadow-xs flex items-center justify-center gap-1"
+                    >
+                      <span>Notify Me</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => onEnrollCourse(course.id)}
+                      className="w-full py-2.5 px-3 rounded-xl text-xs font-extrabold text-slate-950 bg-amber-400 hover:bg-amber-300 active:scale-95 transition-all shadow-xs flex items-center justify-center gap-1"
+                    >
+                      <span>Join Now</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  )}
                 </div>
               </div>
 
