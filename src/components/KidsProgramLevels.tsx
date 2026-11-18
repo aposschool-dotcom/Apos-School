@@ -38,6 +38,7 @@ export const KidsProgramLevels: React.FC = () => {
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/Z8TMhiDofYo"
+              loading="lazy"
               title="آپ کے بچے کو یہاں کیا سکھایا جائے گا؟ مکمل تعارف"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
