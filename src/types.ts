@@ -49,7 +49,7 @@ export interface EnrollmentFormData {
   whatsapp: string;
   city: string;
   courseId: string;
-  paymentPlan: 'full' | 'installments_4' | 'installments_10days';
+  paymentPlan: 'full' | 'monthly' | 'installments_10days';
   background: string;
   message?: string;
 }

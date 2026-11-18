@@ -144,7 +144,7 @@ export const PhilosophySection: React.FC<PhilosophySectionProps> = ({ onOpenEnro
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <span className="text-xs text-slate-400">
-                  Complete roadmap spans 120 days of guided growth
+                  Complete roadmap spans 90 days of guided growth
                 </span>
               </div>
             </div>

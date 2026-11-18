@@ -12,11 +12,13 @@ export const APOS_CONTACT = {
   },
   address: 'Online School - Serving Students Across Pakistan & Worldwide',
   fee: {
-    total: 5000,
-    durationDays: 120,
-    installments4: 1250,
-    installments10Days: 410,
-    total10DayIntervals: 12,
+    total: 4500,
+    durationMonths: 3,
+    registration: 500,
+    grandTotal: 5000,
+    monthly: 1500,
+    every10Days: 500,
+    totalInstallments: 9,
   }
 };
 
@@ -41,65 +43,99 @@ export const COURSES_DATA: Course[] = [
   {
     id: 'ai-digital-marketing',
     title: 'AI + Digital Marketing Program',
-    tagline: 'A 120-day, step-by-step roadmap — from AI Foundation to Digital Marketing to Communication Mastery — designed to get you your first paying clients.',
-    duration: '120 Days (90 Days Skill Mastery + 30 Days Communication Mastery)',
+    tagline: 'A 90-day journey on your mobile phone: 2 months of skills, 1 month of practice, projects and real earning.',
+    duration: '90 Days (60 Days Skills + 30 Days Practice, Projects & Earning)',
     level: 'All Levels',
     category: 'ai-marketing',
     badge: 'Flagship Program',
-    description: 'Pakistan\'s first mobile freelancing school\'s flagship roadmap — master AI-powered graphic design and video editing, run real Facebook & Instagram marketing campaigns, and finish with a dedicated Communication Mastery month built to land your first 3 real clients.',
+    description: 'Pakistan\'s First Mobile Freelancing School\'s flagship journey. One live class every night (40 minutes to 1 hour, Monday to Friday), taught in easy words for complete beginners. Everything is done on your mobile phone: no laptop needed. Learn skills in 60 days, then use the last 30 days to practice, build projects and start earning.',
     topics: [
-      'AI Foundation — Graphic Designing with AI (Canva + AI Tools)',
-      'AI Foundation — Video Editing with AI',
-      'Digital Marketing with AI — Facebook Management & Marketing',
-      'Digital Marketing with AI — Instagram Management & Marketing',
-      'Communication Mastery — Client Communication',
-      'Communication Mastery — Client Hunting (Land 3 Real Clients)',
-      'Communication Mastery — Ready-Made Client Proposal PDF',
+      'Foundational AI Level — 2 free classes to begin',
+      'Graphic Designing with AI',
+      'Videography & Video Editing with AI',
+      'Social Media Marketing',
+      'Meta Ads with AI',
+      'Communication Mastery — client communication, client hunting, ready-made proposal PDF',
+      'Self-Help & Mindset Journey — 5 movies, 5 audio books, life-changing assignments',
+      'FREE on completion: TikTok Ads Mastery course',
+      'BONUS: Complete Client Communication course',
     ],
     modules: [
       {
-        title: 'Module 1: AI Foundation',
-        subtitle: 'Build your core creative skillset using AI-powered tools',
+        title: 'Start Free: Foundational AI Level',
+        subtitle: '2 classes, completely free, no commitment',
         items: [
-          'Graphic Designing with AI — learn design using Canva combined with AI tools',
-          'Video Editing with AI — learn to edit professional videos using AI tools',
+          'Understand freelancing and AI in the simplest words',
+          'See which skill suits you before you pay anything',
         ],
       },
       {
-        title: 'Module 2: Digital Marketing with AI',
-        subtitle: 'Learn to manage and market on the two platforms that matter most',
+        title: 'Phase 1 (Days 1-60): Skills Mastery',
+        subtitle: 'One class every night, Monday to Friday, 40 min to 1 hour, all on your phone',
         items: [
-          'Facebook Management & Marketing',
-          'Instagram Management & Marketing',
+          'Graphic Designing with AI',
+          'Videography & Video Editing with AI',
+          'Social Media Marketing',
+          'Meta Ads with AI',
         ],
       },
       {
-        title: 'Module 3: Communication Mastery',
-        subtitle: 'A full dedicated month — because communication is the #1 skill gap in Pakistan',
+        title: 'Phase 2 (Days 61-90): Practice, Projects & Earning',
+        subtitle: 'Your earning starts inside this month. There is no fourth month.',
         items: [
-          'Client Communication — how to talk to and retain clients professionally',
-          'Client Hunting — a guided process to land your first 3 real clients',
-          'Client Proposal PDF — a ready-made, pre-designed proposal template you simply customize with your own name and use immediately',
+          'Practice on real projects with mentor guidance',
+          'Client Hunting — a guided process to land your first real clients',
+          'Ready-made Client Proposal PDF — customize with your own name and use it immediately',
+          'Start earning from your skills before the course ends',
+        ],
+      },
+      {
+        title: 'Communication Mastery (runs through all 90 days)',
+        subtitle: 'Communication is the number one skill gap — we give it special attention',
+        items: [
+          'How to talk to clients professionally and confidently',
+          'How to write messages, pitch and handle objections',
+          'How to keep clients and get repeat work',
+          'BONUS: a complete Client Communication course',
+        ],
+      },
+      {
+        title: 'Self-Help & Mindset Journey (inside the 90 days)',
+        subtitle: 'Skills earn money. A strong mindset keeps it. We build both.',
+        items: [
+          '5 movies watched together, each with a life lesson',
+          '5 books listened to as audio books',
+          'Assignments on gratitude (shukrguzari)',
+          'Assignments on patience (sabr)',
+          'Assignments on feeling and understanding your emotions',
+          'Assignments on living life with purpose',
+        ],
+      },
+      {
+        title: 'Free Gift on Completion',
+        subtitle: 'For every student who completes the course',
+        items: [
+          'TikTok Ads Mastery course — free of cost',
         ],
       },
     ],
     projects: [
       'AI-Designed Graphics & Edited Video Portfolio',
-      'Live Facebook & Instagram Marketing Campaign',
-      'Your First 3 Real Client Proposals (Sent & Followed Up)'
+      'Live Social Media & Meta Ads Campaign',
+      'Your First Real Client Proposals (Sent & Followed Up)'
     ],
-    targetAudience: 'Students, marketers, freelancers, and small business owners wanting modern competitive edge.',
-    outcome: 'Deliver high-value marketing campaigns with 5x speed using cutting-edge AI assistance.'
+    targetAudience: 'Complete beginners, students, housewives and anyone with only a mobile phone who wants a skill and an income.',
+    outcome: 'A real skill, a portfolio, a stronger mindset and your first paying clients within 90 days.'
   },
   {
     id: 'freelancing-abcd',
     title: 'Freelancing Foundation with AI',
     tagline: 'A gentle, zero-jargon roadmap to understanding freelancing and landing your first paid online client.',
-    duration: 'Comprehensive Workshop',
+    duration: '2 Classes — Completely Free',
     level: 'Foundation',
     category: 'freelancing',
-    badge: 'Foundation Level',
-    description: 'A beginner-friendly introduction to the world of remote work and digital freelancing. Learn how beginners can pick in-demand skills, build a trustworthy profile, and start online earning step-by-step.',
+    badge: 'Free',
+    description: 'A free 2-class introduction to the world of remote work and digital freelancing, explained in easy words. Learn how beginners can pick in-demand skills, build a trustworthy profile, and start online earning step-by-step.',
     topics: [
       'What is Freelancing & How Independent Client Work Works',
       'Local Pakistani Market & Direct Client Acquisition Strategies',
@@ -119,8 +155,8 @@ export const COURSES_DATA: Course[] = [
   },
   {
     id: 'level-2-advanced-learning',
-    title: 'Social Commerce with AI',
-    tagline: 'Level 2 — Deep practical learning in social commerce and advanced digital marketing, powered by AI.',
+    title: 'Social Commerce & Meta Specialization',
+    tagline: 'Advanced Level (second tier) — Social Commerce and Meta Specialization, powered by AI. Coming later.',
     duration: 'Advanced Phase',
     level: 'Intermediate',
     category: 'advanced',
@@ -129,6 +165,7 @@ export const COURSES_DATA: Course[] = [
     description: 'Move beyond the main program into industry-standard, commercial-scale execution. Learn Social Commerce and Advanced Digital Marketing with AI, work on simulated and live client assignments, and polish your portfolio for high-ticket opportunities.',
     topics: [
       'Social Commerce with AI',
+      'Meta Specialization',
       'Advanced Digital Marketing with AI',
       'Advanced Industry Tools & Automation Workflows',
       'Practical Assignments with Instructor Feedback',
@@ -278,7 +315,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Who can join APOS School?',
-    answer: 'Anyone with a basic computer or smartphone and a desire to learn! Our courses are specifically designed for students, complete beginners, professionals wanting to upskill, housewives seeking home-based income, and entrepreneurs looking to grow their businesses.'
+    answer: 'Anyone with a smartphone (no laptop needed) and a desire to learn! Our courses are specifically designed for students, complete beginners, professionals wanting to upskill, housewives seeking home-based income, and entrepreneurs looking to grow their businesses.'
   },
   {
     question: 'Do you provide practical learning instead of just recorded lectures?',
@@ -286,11 +323,27 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Is this only for professionals with prior technical backgrounds?',
-    answer: 'No! Beginners can start from ground zero. Our "Freelancing Foundation with AI" program assumes zero prior computer knowledge and takes you step-by-step from fundamental concepts to confident execution before you move into the Main Program.'
+    answer: 'No! Beginners can start from ground zero. Our 2 free Foundational AI classes assume zero prior knowledge, and the whole 90-day course is taught on a mobile phone in easy words.'
   },
   {
     question: 'What is the fee and installment structure?',
-    answer: 'Our total comprehensive course fee is only Rs. 5,000 for the full 120 Days duration. To make education universally accessible, you can pay in 4 flexible installments, or take advantage of our unique mini-plan of just Rs. 410 every 10th day (approx. Rs. 41/day)!'
+    answer: 'The course fee for the full 90 days is Rs. 4,500: either Rs. 1,500 per month for 3 months, or Rs. 500 every 10 days. In addition there is a one-time, non-refundable registration fee of Rs. 500, so the grand total is Rs. 5,000. The first 2 Foundational AI classes are completely free, so you can try before you pay.'
+  },
+  {
+    question: 'What are the class timings and how long is the course?',
+    answer: 'One live class every night, Monday to Friday, for 40 minutes to 1 hour. Skills are taught in the first 60 days. The last 30 days are for practice, projects and starting to earn. In total the course is 90 days.'
+  },
+  {
+    question: 'Do I need a laptop?',
+    answer: 'No. The entire course is taught and practised on a mobile phone, in easy words, for complete beginners.'
+  },
+  {
+    question: 'What do I get free on completion?',
+    answer: 'Students who complete the course get the TikTok Ads Mastery course free of cost. A complete Client Communication course is also included as a bonus.'
+  },
+  {
+    question: 'Is there any mindset or self-help training?',
+    answer: 'Yes, and we give it strong importance. Inside the 90 days you watch 5 movies, listen to 5 audio books, and complete assignments on gratitude, patience, feeling your emotions and living life with purpose.'
   },
   {
     question: 'How does the community-based learning model work?',

@@ -23,6 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
     { name: 'About', href: '#about' },
     { name: 'Philosophy', href: '#philosophy' },
     { name: 'Courses', href: '#courses' },
+    { name: 'Mindset', href: '#mindset' },
     { name: 'APOS Kids', href: '#kids-school', highlight: true },
     { name: 'Why APOS', href: '#why-us' },
     { name: 'Reviews', href: '#facebook-reviews' },
@@ -42,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
               Admissions Open 2026 Batch
             </span>
             <span className="hidden sm:inline text-slate-400">
-              120 Days Project-Based Training • Only Rs. 410 every 10th day
+              90 Days on Your Mobile • Fee Rs. 4,500 + Rs. 500 Registration • First 2 Classes Free
             </span>
           </div>
           <div className="flex items-center gap-4 text-[12px]">

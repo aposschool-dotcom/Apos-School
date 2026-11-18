@@ -181,7 +181,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         {/* Modal Footer */}
         <div className="p-6 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-xs text-slate-500 text-center sm:text-left">
-            <span>Course Fee: Rs. 5,000 (Available in Rs. 410 installments)</span>
+            <span>Fee: Rs. 4,500 (Rs. 1,500/month or Rs. 500 every 10 days) + Rs. 500 registration. First 2 classes free.</span>
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">

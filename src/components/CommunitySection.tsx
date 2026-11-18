@@ -89,7 +89,7 @@ export const CommunitySection: React.FC<CommunitySectionProps> = ({ onOpenEnroll
           <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-300">
               <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
-              <span>Active WhatsApp VIP Group Access included with all 120-Day enrollments</span>
+              <span>Active WhatsApp VIP Group Access included with all 90-Day enrollments</span>
             </div>
 
             <div className="flex items-center gap-3">

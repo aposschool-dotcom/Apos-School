@@ -95,12 +95,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment, onExploreCourses }
             {/* Key Trust Highlights */}
             <div className="pt-4 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4">
               <div className="flex flex-col">
-                <span className="text-2xl font-black text-amber-400">120 Days</span>
-                <span className="text-xs text-slate-400 font-medium">Practical Roadmap</span>
+                <span className="text-2xl font-black text-amber-400">90 Days</span>
+                <span className="text-xs text-slate-400 font-medium">Mobile-Only Journey</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-black text-white">Rs. 410</span>
-                <span className="text-xs text-slate-400 font-medium">Every 10th Day Plan</span>
+                <span className="text-2xl font-black text-white">Rs. 4,500</span>
+                <span className="text-xs text-slate-400 font-medium">Course Fee + Rs. 500 Reg.</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-emerald-400">5,000+</span>

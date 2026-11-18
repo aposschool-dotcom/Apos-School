@@ -32,7 +32,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
   const [whatsapp, setWhatsapp] = useState('');
   const [city, setCity] = useState('');
   const [course, setCourse] = useState(defaultCourse);
-  const [paymentPlan, setPaymentPlan] = useState<'installments_10days' | 'installments_4' | 'lump'>('installments_10days');
+  const [paymentPlan, setPaymentPlan] = useState<'installments_10days' | 'monthly' | 'lump'>('installments_10days');
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -40,10 +40,10 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
     if (!name || !whatsapp) return;
 
     const planText = paymentPlan === 'installments_10days'
-      ? 'Rs. 410 every 10th day (12 intervals)'
-      : paymentPlan === 'installments_4'
-      ? '4 Installments of Rs. 1,250'
-      : 'Rs. 5,000 One-time';
+      ? 'Rs. 500 every 10 days (+ Rs. 500 registration)'
+      : paymentPlan === 'monthly'
+      ? 'Rs. 1,500 per month (+ Rs. 500 registration)'
+      : 'Rs. 4,500 One-time (+ Rs. 500 registration)';
 
     const message = encodeURIComponent(
       `*Assalam-o-Alaikum APOS Admissions Desk*\n\n` +
@@ -79,7 +79,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
 
           <div className="flex items-center gap-2 text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">
             <GraduationCap className="w-4 h-4" />
-            <span>Admissions Portal • 120 Days Roadmap</span>
+            <span>Admissions Portal • 90 Days Roadmap</span>
           </div>
 
           <h3 className="text-2xl font-black text-white">
@@ -190,21 +190,21 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                         : 'border-slate-200 text-slate-600 hover:bg-slate-50'
                     }`}
                   >
-                    <div>Rs. 410</div>
-                    <div className="text-[10px] text-slate-500">every 10th day</div>
+                    <div>Rs. 500</div>
+                    <div className="text-[10px] text-slate-500">every 10 days</div>
                   </button>
 
                   <button
                     type="button"
-                    onClick={() => setPaymentPlan('installments_4')}
+                    onClick={() => setPaymentPlan('monthly')}
                     className={`p-2 rounded-xl border transition-all ${
-                      paymentPlan === 'installments_4'
+                      paymentPlan === 'monthly'
                         ? 'border-amber-400 bg-amber-50 font-bold text-amber-950'
                         : 'border-slate-200 text-slate-600 hover:bg-slate-50'
                     }`}
                   >
-                    <div>Rs. 1,250</div>
-                    <div className="text-[10px] text-slate-500">4 installments</div>
+                    <div>Rs. 1,500</div>
+                    <div className="text-[10px] text-slate-500">per month</div>
                   </button>
 
                   <button
@@ -216,8 +216,8 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                         : 'border-slate-200 text-slate-600 hover:bg-slate-50'
                     }`}
                   >
-                    <div>Rs. 5,000</div>
-                    <div className="text-[10px] text-slate-500">Full 120 Days</div>
+                    <div>Rs. 4,500</div>
+                    <div className="text-[10px] text-slate-500">Full 90 Days</div>
                   </button>
                 </div>
               </div>

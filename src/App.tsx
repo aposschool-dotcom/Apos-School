@@ -9,6 +9,7 @@ import { WhyChooseUs } from './components/WhyChooseUs';
 import { FacebookReviewsSection } from './components/FacebookReviewsSection';
 import { CommunitySection } from './components/CommunitySection';
 import { FreeClassesSection } from './components/FreeClassesSection';
+import { MindsetSection, CommunicationSection } from './components/MindsetSection';
 import { PricingSection } from './components/PricingSection';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
@@ -59,6 +60,9 @@ export default function App() {
           onSelectCourse={(course) => setSelectedCourse(course)}
           onEnrollCourse={(courseId) => handleOpenEnrollment(courseId)}
         />
+
+        <MindsetSection />
+        <CommunicationSection />
 
         {/* 5. APOS Kids School Dedicated Section */}
         <KidsSchoolSection

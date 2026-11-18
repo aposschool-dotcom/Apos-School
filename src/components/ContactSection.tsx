@@ -37,10 +37,10 @@ export const ContactSection: React.FC = () => {
       `*Course:* ${formData.course}\n` +
       `*Preferred Plan:* ${
         formData.paymentPlan === 'installments_10days'
-          ? 'Rs. 410 every 10th day'
-          : formData.paymentPlan === 'installments_4'
-          ? '4 Installments of Rs. 1,250'
-          : 'Rs. 5,000 One-time'
+          ? 'Rs. 500 every 10 days (+ Rs. 500 registration)'
+          : formData.paymentPlan === 'monthly'
+          ? 'Rs. 1,500 per month (+ Rs. 500 registration)'
+          : 'Rs. 4,500 One-time (+ Rs. 500 registration)'
       }\n` +
       `*Notes:* ${formData.message || 'Ready to start learning'}`
     );
@@ -284,18 +284,18 @@ export const ContactSection: React.FC = () => {
                         onChange={() => setFormData({ ...formData, paymentPlan: 'installments_10days' })}
                         className="accent-amber-500"
                       />
-                      <span>Rs. 410 / 10 Days</span>
+                      <span>Rs. 500 / 10 Days</span>
                     </label>
 
                     <label className="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 text-xs cursor-pointer hover:bg-slate-50">
                       <input
                         type="radio"
                         name="paymentPlan"
-                        checked={formData.paymentPlan === 'installments_4'}
-                        onChange={() => setFormData({ ...formData, paymentPlan: 'installments_4' })}
+                        checked={formData.paymentPlan === 'monthly'}
+                        onChange={() => setFormData({ ...formData, paymentPlan: 'monthly' })}
                         className="accent-amber-500"
                       />
-                      <span>4 Installments</span>
+                      <span>Rs. 1,500 / Month</span>
                     </label>
 
                     <label className="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 text-xs cursor-pointer hover:bg-slate-50">
@@ -306,7 +306,7 @@ export const ContactSection: React.FC = () => {
                         onChange={() => setFormData({ ...formData, paymentPlan: 'lump' })}
                         className="accent-amber-500"
                       />
-                      <span>Rs. 5,000 Full</span>
+                      <span>Rs. 4,500 Full</span>
                     </label>
                   </div>
                 </div>

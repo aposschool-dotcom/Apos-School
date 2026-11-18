@@ -86,14 +86,14 @@ export const WhyChooseUs: React.FC = () => {
               <h3 className="text-xl font-bold text-white">Unmatched Affordability</h3>
 
               <p className="text-sm text-slate-300 leading-relaxed">
-                Rs. 5,000 for 120 Days with an effortless plan of Rs. 410 every 10th day. High-income digital skills
+                Rs. 4,500 for the full 90 days (Rs. 1,500 per month), or just Rs. 500 every 10 days, plus a one-time Rs. 500 registration. The first 2 classes are free. High-income digital skills
                 within reach of every passionate learner in Pakistan.
               </p>
             </div>
 
             <div className="pt-4 mt-3 border-t border-slate-800 flex items-center justify-between text-xs text-amber-400 font-bold">
               <span>Financial Inclusivity</span>
-              <span>120 Days Access</span>
+              <span>90 Days Access</span>
             </div>
           </div>
 

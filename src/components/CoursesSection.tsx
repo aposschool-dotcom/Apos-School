@@ -26,9 +26,9 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
 
   const categories = [
     { id: 'all', label: 'All Courses (3)' },
-    { id: 'freelancing', label: 'Freelancing Foundation' },
+    { id: 'freelancing', label: 'Free Foundational AI Classes' },
     { id: 'ai-marketing', label: 'Main Program (AI + Digital Marketing)' },
-    { id: 'advanced', label: 'Social Commerce (Level 2)' },
+    { id: 'advanced', label: 'Advanced (Social Commerce & Meta)' },
   ];
 
   const filteredCourses = selectedCategory === 'all'
@@ -191,7 +191,7 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
               Not sure which course is right for you?
             </h4>
             <p className="text-sm text-slate-600">
-              Our 120-Day Comprehensive Roadmap guides you through foundation, AI tools, and freelancing step by step!
+              Our 90-Day Roadmap guides you step by step on your mobile phone, from 2 free classes to your first client.
             </p>
           </div>
 

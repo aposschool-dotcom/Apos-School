@@ -145,8 +145,8 @@ export const AboutSection: React.FC = () => {
                 </div>
                 <h4 className="text-lg font-bold text-slate-900">Affordable & Transparent</h4>
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  Quality digital education shouldn't be a luxury. We offer complete 120-day access with broken-down
-                  installments of just Rs. 410 every 10 days so anyone in Pakistan can afford to learn.
+                  Quality digital education shouldn't be a luxury. We offer complete 90-day access with broken-down
+                  installments of just Rs. 500 every 10 days (plus a Rs. 500 registration) so anyone in Pakistan can afford to learn.
                 </p>
               </div>
               <div className="pt-4 mt-2 border-t border-amber-200/80 text-xs font-bold text-amber-900 flex items-center justify-between">

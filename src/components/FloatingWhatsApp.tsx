@@ -23,7 +23,7 @@ export const FloatingWhatsApp: React.FC = () => {
             <span className="font-bold text-slate-900">APOS Admissions Active</span>
           </div>
           <p className="text-slate-600 leading-snug">
-            Need course guidance or details about the <strong>Rs. 410 installment plan</strong>? Chat with us!
+            Need course guidance or details about the <strong>Rs. 500 every 10 days plan</strong>? Chat with us!
           </p>
         </div>
       )}

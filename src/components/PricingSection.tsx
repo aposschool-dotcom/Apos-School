@@ -17,15 +17,20 @@ interface PricingSectionProps {
 }
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment }) => {
-  const [selectedPlan, setSelectedPlan] = useState<'lump' | 'installments4' | 'installments10days'>('installments10days');
+  const [selectedPlan, setSelectedPlan] = useState<'lump' | 'monthly' | 'installments10days'>('installments10days');
 
   const includedFeatures = [
-    'Complete 120 Days Guided Roadmap & Access',
-    'AI + Digital Marketing & Freelancing Modules',
+    'Live class every night, Monday to Friday (40 min to 1 hour)',
+    'Entire course on your mobile phone. No laptop needed',
+    '2 free Foundational AI classes to start',
+    'Graphic Designing, Video Editing, Social Media Marketing & Meta Ads with AI',
     'Practical Project-Based Assignments with Mentor Reviews',
     'Local Client Acquisition & Direct Proposal / Pitching Guide',
     'Private Student WhatsApp Community Support',
     'Weekly Live Q&A Sessions with Ameer PopcornWala',
+    'Self-Help Journey: 5 movies, 5 audio books, mindset assignments',
+    'BONUS: Complete Client Communication course',
+    'FREE on completion: TikTok Ads Mastery course',
     'Verified Course Completion Certificate & Portfolio Review'
   ];
 
@@ -62,14 +67,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
                   Admissions Status: <span className="text-emerald-400">OPEN</span>
                 </span>
                 <span className="text-xs text-slate-400 block">
-                  Comprehensive 120-Day Professional Cohort
+                  90-Day Mobile Freelancing Journey
                 </span>
               </div>
             </div>
 
             <div className="flex items-center gap-2 px-3 py-1 rounded-xl bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-bold">
               <Calendar className="w-4 h-4" />
-              <span>Full Duration: 120 DAYS</span>
+              <span>Full Duration: 90 DAYS</span>
             </div>
           </div>
 
@@ -96,22 +101,22 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
                     MOST POPULAR
                   </div>
                   <div className="text-xs font-bold text-slate-500">Mini-Installment</div>
-                  <div className="text-lg font-black text-slate-900 mt-1">Rs. 410</div>
+                  <div className="text-lg font-black text-slate-900 mt-1">Rs. 500</div>
                   <div className="text-xs text-amber-800 font-semibold mt-0.5">Every 10th Day</div>
                 </button>
 
                 {/* Option 2: 4 Installments */}
                 <button
-                  onClick={() => setSelectedPlan('installments4')}
+                  onClick={() => setSelectedPlan('monthly')}
                   className={`p-4 rounded-2xl border text-left transition-all ${
-                    selectedPlan === 'installments4'
+                    selectedPlan === 'monthly'
                       ? 'border-amber-400 bg-amber-50/70 shadow-sm ring-2 ring-amber-400/30'
                       : 'border-slate-200 hover:border-slate-300 bg-slate-50/50'
                   }`}
                 >
-                  <div className="text-xs font-bold text-slate-500">4 Installments</div>
-                  <div className="text-lg font-black text-slate-900 mt-1">Rs. 1,250</div>
-                  <div className="text-xs text-slate-600 font-semibold mt-0.5">Per Installment</div>
+                  <div className="text-xs font-bold text-slate-500">Monthly</div>
+                  <div className="text-lg font-black text-slate-900 mt-1">Rs. 1,500</div>
+                  <div className="text-xs text-slate-600 font-semibold mt-0.5">Per Month (3 Months)</div>
                 </button>
 
                 {/* Option 3: Full One-Time */}
@@ -124,7 +129,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
                   }`}
                 >
                   <div className="text-xs font-bold text-slate-500">One-Time Complete</div>
-                  <div className="text-lg font-black text-slate-900 mt-1">Rs. 5,000</div>
+                  <div className="text-lg font-black text-slate-900 mt-1">Rs. 4,500</div>
                   <div className="text-xs text-emerald-700 font-semibold mt-0.5">Zero Follow-ups</div>
                 </button>
 
@@ -141,19 +146,19 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
                   <div className="text-2xl font-black text-slate-900 mt-0.5 flex items-baseline gap-2">
                     {selectedPlan === 'installments10days' && (
                       <>
-                        <span>Rs. 410</span>
-                        <span className="text-xs font-semibold text-slate-500">/ every 10th day (12 intervals)</span>
+                        <span>Rs. 500</span>
+                        <span className="text-xs font-semibold text-slate-500">/ every 10 days (9 payments)</span>
                       </>
                     )}
-                    {selectedPlan === 'installments4' && (
+                    {selectedPlan === 'monthly' && (
                       <>
-                        <span>Rs. 1,250</span>
-                        <span className="text-xs font-semibold text-slate-500">/ 4 equal installments</span>
+                        <span>Rs. 1,500</span>
+                        <span className="text-xs font-semibold text-slate-500">/ per month for 3 months</span>
                       </>
                     )}
                     {selectedPlan === 'lump' && (
                       <>
-                        <span>Rs. 5,000</span>
+                        <span>Rs. 4,500</span>
                         <span className="text-xs font-semibold text-slate-500">/ one-time complete fee</span>
                       </>
                     )}
@@ -161,15 +166,19 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
                 </div>
 
                 <div className="text-right sm:text-right">
-                  <div className="text-xs text-slate-500">Total Program Cost</div>
-                  <div className="text-lg font-bold text-slate-900">Total: Rs. 5,000</div>
+                  <div className="text-xs text-slate-500">Course Fee (3 months)</div>
+                  <div className="text-lg font-bold text-slate-900">Rs. 4,500 + Rs. 500 registration = Rs. 5,000</div>
                 </div>
+              </div>
+
+              <div className="text-xs sm:text-sm text-amber-900 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
+                <strong>Rs. 500 registration fee</strong> (non-refundable, covers small admission expenses) is paid separately, in addition to the Rs. 4,500 course fee. Grand total: <strong>Rs. 5,000</strong>. The first 2 Foundational AI classes are <strong>free</strong>, so you can try before you pay.
               </div>
 
               {/* Checklist of What's Included */}
               <div className="space-y-2.5 pt-1">
                 <div className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                  What You Receive During 120 Days:
+                  What You Receive During 90 Days:
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
                   {includedFeatures.map((feat) => (
