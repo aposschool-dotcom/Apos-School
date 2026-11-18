@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { KIDS_AI_INNOVATOR_PROGRAM, KIDS_ADMISSIONS_WHATSAPP, KIDS_ADMISSIONS_PHONE_FORMATTED } from '../data/aposData';
+import { KidsVideoPoster } from './KidsVideoPoster';
 import {
   CheckCircle2, GraduationCap, Users, ShieldCheck, Download, MessageCircle, Lock, PlayCircle,
 } from 'lucide-react';
@@ -35,14 +36,7 @@ export const KidsProgramLevels: React.FC = () => {
             </h3>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-video">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/Z8TMhiDofYo"
-              loading="lazy"
-              title="آپ کے بچے کو یہاں کیا سکھایا جائے گا؟ مکمل تعارف"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <KidsVideoPoster />
           </div>
         </div>
 

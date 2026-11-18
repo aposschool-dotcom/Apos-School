@@ -459,6 +459,8 @@ export const FACEBOOK_REVIEWS: FacebookReview[] = [
 ];
 
 export const KIDS_ADMISSIONS_WHATSAPP = 'https://wa.me/923091639292?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20get%20information%20about%20APOS%20Kids%20AI%20Innovator%20Program%20admission.';
+// Change this one number for each new batch (the video cover on the Kids section updates automatically)
+export const KIDS_CURRENT_BATCH = 7;
 export const KIDS_ADMISSIONS_PHONE_FORMATTED = '0309-1639292';
 
 export interface KidsLevel {
