@@ -46,12 +46,19 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Affordable Learning Model For Everyone
+            Simple Fee. Easy Payments.
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            We believe financial constraints should never stop a passionate Pakistani student from learning.
-            Choose the payment schedule that suits your pocket.
+            Pay in the way that is easy for you: Rs. 500 every 10 days, or Rs. 1,500 every month.
+          </p>
+        </div>
+
+        {/* Limited-time offer */}
+        <div className="max-w-4xl mx-auto mb-6 rounded-2xl bg-amber-400 text-slate-950 px-5 py-4 text-center sm:text-left flex flex-col sm:flex-row items-center gap-3">
+          <Sparkles className="w-6 h-6 shrink-0" />
+          <p className="text-sm sm:text-base font-bold leading-snug">
+            Special offer for this month only: we have reduced the fee for Batch 48. Join now to get this lower fee. Next month the fee goes back up.
           </p>
         </div>
 

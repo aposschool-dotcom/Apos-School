@@ -22,7 +22,7 @@ export const FaqSection: React.FC = () => {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Got Questions? We Have Answers.
+            Common Questions
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">

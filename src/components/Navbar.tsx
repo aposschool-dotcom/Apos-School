@@ -23,7 +23,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
     { name: 'About', href: '#about' },
     { name: 'Philosophy', href: '#philosophy' },
     { name: 'Courses', href: '#courses' },
-    { name: 'Mindset', href: '#mindset' },
     { name: 'APOS Kids', href: '#kids-school', highlight: true },
     { name: 'Why APOS', href: '#why-us' },
     { name: 'Reviews', href: '#facebook-reviews' },
@@ -40,10 +39,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold text-[11px] border border-amber-500/30">
               <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-              Admissions Open 2026 Batch
+              AI Integrated Batch 48 • Admissions Open
             </span>
             <span className="hidden sm:inline text-slate-400">
-              90 Days on Your Mobile • Fee Rs. 4,500 + Rs. 500 Registration • First 2 Classes Free
+              Special reduced fee for this month only • First 2 classes free
             </span>
           </div>
           <div className="flex items-center gap-4 text-[12px]">

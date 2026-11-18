@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* APOS green theme: remap dark slate shades to brand greens */
+@theme {
+  --color-slate-700: #2f7a46;
+  --color-slate-800: #1f5a35;
+  --color-slate-850: #1B4D2E;
+  --color-slate-900: #14391f;
+  --color-slate-950: #0c2615;
+}

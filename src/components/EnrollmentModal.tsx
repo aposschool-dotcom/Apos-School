@@ -26,7 +26,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
 
   const defaultCourse = preselectedCourseId === 'kids-school'
     ? 'APOS Kids School (Age 8-15)'
-    : COURSES_DATA.find((c) => c.id === preselectedCourseId)?.title || COURSES_DATA[0].title;
+    : COURSES_DATA.find((c) => c.id === preselectedCourseId)?.title || (COURSES_DATA.find((c) => c.id === 'ai-digital-marketing') || COURSES_DATA[0]).title;
 
   const [name, setName] = useState('');
   const [whatsapp, setWhatsapp] = useState('');

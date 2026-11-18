@@ -25,10 +25,10 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const categories = [
-    { id: 'all', label: 'All Courses (3)' },
-    { id: 'freelancing', label: 'Free Foundational AI Classes' },
-    { id: 'ai-marketing', label: 'Main Program (AI + Digital Marketing)' },
-    { id: 'advanced', label: 'Advanced (Social Commerce & Meta)' },
+    { id: 'all', label: 'All (3 Steps)' },
+    { id: 'freelancing', label: 'Step 1: Free Classes' },
+    { id: 'ai-marketing', label: 'Step 2: Main Course' },
+    { id: 'advanced', label: 'Step 3: Advanced' },
   ];
 
   const filteredCourses = selectedCategory === 'all'
@@ -43,16 +43,15 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-xs font-bold uppercase tracking-wider">
             <BookOpen className="w-3.5 h-3.5 text-amber-600" />
-            Market-Relevant Curriculum
+            Your Learning Path
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Our Flagship <span className="text-navy-900">Programs & Courses</span>
+            Start Free. Then <span className="text-navy-900">Learn a Skill.</span>
           </h2>
 
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Every course is engineered to deliver immediate practical competence. Choose your starting
-            point and master high-demand digital skills with hands-on mentor support.
+            Step 1: join 2 free classes and see if it suits you. Step 2: join the main 90-day course. Step 3: the advanced level comes later.
           </p>
         </div>
 
@@ -130,6 +129,17 @@ export const CoursesSection: React.FC<CoursesSectionProps> = ({
                     )}
                   </ul>
                 </div>
+
+                {course.id === 'ai-digital-marketing' && (
+                  <div className="rounded-xl bg-emerald-900 text-white p-3.5 space-y-1.5">
+                    <div className="text-[11px] uppercase tracking-wider font-extrabold text-amber-400">
+                      Inside the 90 days: Self-Help Journey
+                    </div>
+                    <p className="text-xs leading-relaxed text-emerald-50">
+                      5 movies, 5 audio books, and assignments on gratitude, patience, feeling your emotions and living with purpose.
+                    </p>
+                  </div>
+                )}
 
                 {course.eligibilityNote && (
                   <div className="flex items-start gap-2 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2 text-[11px] text-amber-800">

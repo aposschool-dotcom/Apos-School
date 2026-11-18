@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnrollment }) => {
               Core Programs
             </h4>
             <ul className="space-y-2 text-xs">
-              <li className="text-slate-300">Freelancing Foundation with AI</li>
+              <li className="text-slate-300">Free Foundational AI Classes (Start Here)</li>
               <li className="text-slate-300">AI + Digital Marketing Program (Main)</li>
               <li className="text-slate-300">Social Commerce & Meta Specialization (Advanced — Coming Soon)</li>
               <li className="text-amber-400 font-semibold">APOS Kids AI & Creativity Wing</li>

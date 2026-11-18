@@ -41,22 +41,45 @@ export const FREE_YOUTUBE_PLAYLISTS = [
 
 export const COURSES_DATA: Course[] = [
   {
+    id: 'freelancing-abcd',
+    title: 'Free Foundational AI Classes',
+    tagline: 'Start here. 2 free classes to find out if this course is right for you.',
+    duration: '2 Classes — Completely Free',
+    level: 'Foundation',
+    category: 'freelancing',
+    badge: 'Step 1 • Free',
+    description: 'Join 2 free classes before you pay anything. Learn what freelancing and AI are in easy words, then take a short assessment. The assessment helps you and us decide whether this course is the right path for you.',
+    topics: [
+      'What is freelancing and how people earn online',
+      'What AI is, in the simplest words',
+      'Which skills are in demand in Pakistan',
+      'Short assessment: is this course right for you?',
+      'Your questions answered before you join',
+    ],
+    projects: [
+      'A short assessment to check your fit',
+      'A clear plan for your next step'
+    ],
+    targetAudience: 'Anyone with a mobile phone. No experience needed.',
+    outcome: 'You clearly know whether this course is for you, with nothing paid.'
+  },
+  {
     id: 'ai-digital-marketing',
     title: 'AI + Digital Marketing Program',
     tagline: 'A 90-day journey on your mobile phone: 2 months of skills, 1 month of practice, projects and real earning.',
     duration: '90 Days (60 Days Skills + 30 Days Practice, Projects & Earning)',
     level: 'All Levels',
     category: 'ai-marketing',
-    badge: 'Flagship Program',
-    description: 'Pakistan\'s First Mobile Freelancing School\'s flagship journey. One live class every night (40 minutes to 1 hour, Monday to Friday), taught in easy words for complete beginners. Everything is done on your mobile phone: no laptop needed. Learn skills in 60 days, then use the last 30 days to practice, build projects and start earning.',
+    badge: 'Step 2 • Main Course',
+    description: 'Pakistan\'s First Mobile Freelancing School. One live class every night, Monday to Friday, 40 minutes to 1 hour. Easy words, made for beginners. Everything is done on your mobile phone, no laptop needed. First 60 days you learn skills. Last 30 days you practice and start earning.',
     topics: [
       'Foundational AI Level — 2 free classes to begin',
       'Graphic Designing with AI',
       'Videography & Video Editing with AI',
       'Social Media Marketing',
       'Meta Ads with AI',
+      'Self-Help Journey — 5 movies, 5 audio books, life-changing assignments',
       'Communication Mastery — client communication, client hunting, ready-made proposal PDF',
-      'Self-Help & Mindset Journey — 5 movies, 5 audio books, life-changing assignments',
       'FREE on completion: TikTok Ads Mastery course',
       'BONUS: Complete Client Communication course',
     ],
@@ -128,39 +151,13 @@ export const COURSES_DATA: Course[] = [
     outcome: 'A real skill, a portfolio, a stronger mindset and your first paying clients within 90 days.'
   },
   {
-    id: 'freelancing-abcd',
-    title: 'Freelancing Foundation with AI',
-    tagline: 'A gentle, zero-jargon roadmap to understanding freelancing and landing your first paid online client.',
-    duration: '2 Classes — Completely Free',
-    level: 'Foundation',
-    category: 'freelancing',
-    badge: 'Free',
-    description: 'A free 2-class introduction to the world of remote work and digital freelancing, explained in easy words. Learn how beginners can pick in-demand skills, build a trustworthy profile, and start online earning step-by-step.',
-    topics: [
-      'What is Freelancing & How Independent Client Work Works',
-      'Local Pakistani Market & Direct Client Acquisition Strategies',
-      'High-Demand Digital Skills Overview for Local Businesses',
-      'How Beginners Can Start Online Earning From Scratch in Pakistan',
-      'Personal Skill Selection Roadmap',
-      'Creating a Winning Service Portfolio, WhatsApp Catalog & Bio',
-      'Avoiding Scams & Safe Payment Handling (JazzCash, EasyPaisa, Bank Transfer)'
-    ],
-    projects: [
-      'Professional Digital Service Portfolio & Catalog',
-      'Direct Pitching Templates for Local Brands & Businesses',
-      'Personalized 60-Day Local Client Action Plan'
-    ],
-    targetAudience: 'Absolute beginners, college students, and housewives with zero prior online earning experience.',
-    outcome: 'Clear clarity on your skillset, active service portfolio, and confident local client pitching strategy.'
-  },
-  {
     id: 'level-2-advanced-learning',
     title: 'Social Commerce & Meta Specialization',
     tagline: 'Advanced Level (second tier) — Social Commerce and Meta Specialization, powered by AI. Coming later.',
     duration: 'Advanced Phase',
     level: 'Intermediate',
     category: 'advanced',
-    badge: 'Coming Soon',
+    badge: 'Step 3 • Coming Later',
     comingSoon: true,
     description: 'Move beyond the main program into industry-standard, commercial-scale execution. Learn Social Commerce and Advanced Digital Marketing with AI, work on simulated and live client assignments, and polish your portfolio for high-ticket opportunities.',
     topics: [

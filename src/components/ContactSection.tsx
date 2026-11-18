@@ -17,7 +17,7 @@ export const ContactSection: React.FC = () => {
     name: '',
     whatsapp: '',
     city: '',
-    course: COURSES_DATA[0].title,
+    course: (COURSES_DATA.find((c) => c.id === 'ai-digital-marketing') || COURSES_DATA[0]).title,
     paymentPlan: 'installments_10days',
     message: ''
   });
