@@ -188,8 +188,8 @@ export const FutureReadyMentors: React.FC = () => {
               <h3 className="text-2xl font-extrabold text-teal-950 mb-2">Partner Program</h3>
               <p className="text-slate-600 mb-4 leading-relaxed">After your training, APOS partners with you to help you run and grow your school.</p>
               <div className="rounded-2xl bg-teal-50 border border-teal-200 p-4 mb-4">
-                <div className="text-3xl font-black text-teal-900">Rs. 10,000 <span className="text-sm font-bold text-slate-500">one payment</span></div>
-                <div className="text-sm text-slate-700 mt-1">or Rs. 6,000 per month (2 months)</div>
+                <div className="text-3xl font-black text-teal-900">Rs. 8,000 <span className="text-sm font-bold text-slate-500">one payment</span></div>
+                <div className="text-sm text-slate-700 mt-1">or Rs. 5,000 per month for 2 months (total Rs. 10,000)</div>
               </div>
               <ul className="space-y-2 mb-4 text-slate-700">
                 {['Complete teacher training with AI', 'First 3 months: 50-50 partnership with APOS', 'After that, you can run it as your own institute', 'Certificate included'].map((x) => (
@@ -208,8 +208,8 @@ export const FutureReadyMentors: React.FC = () => {
               <h3 className="text-2xl font-extrabold mb-2">Full Program</h3>
               <p className="text-teal-50/90 mb-4 leading-relaxed">Our main program. We teach you everything, and you run your own ads, your own marketing and your own work.</p>
               <div className="rounded-2xl bg-white/10 border border-white/25 p-4 mb-4">
-                <div className="text-3xl font-black text-amber-400">Rs. 15,000 <span className="text-sm font-bold text-teal-100">one payment</span></div>
-                <div className="text-sm text-teal-50/90 mt-1">or Rs. 6,000 per month (3 months)</div>
+                <div className="text-3xl font-black text-amber-400">Rs. 10,000 <span className="text-sm font-bold text-teal-100">one payment</span></div>
+                <div className="text-sm text-teal-50/90 mt-1">or Rs. 4,000 per month for 3 months (total Rs. 12,000)</div>
               </div>
               <ul className="space-y-2 mb-6">
                 {['Complete training, step by step', 'You run your own ads', 'You do your own marketing', 'Certificate included'].map((x) => (

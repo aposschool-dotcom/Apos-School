@@ -50,7 +50,7 @@ export const MENTORS_FAQ = [
   },
   {
     q: 'What are the fees?',
-    a: 'Partner Program: Rs. 10,000 in one payment, or Rs. 6,000 per month for 2 months. Full Program: Rs. 15,000 in one payment, or Rs. 6,000 per month for 3 months.',
+    a: 'Partner Program: Rs. 8,000 in one payment, or Rs. 5,000 per month for 2 months (total Rs. 10,000). Full Program: Rs. 10,000 in one payment, or Rs. 4,000 per month for 3 months (total Rs. 12,000).',
   },
   {
     q: 'Can I get a refund?',
