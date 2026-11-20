@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { AposLogo } from './AposLogo';
 import { APOS_CONTACT } from '../data/aposData';
 import { Phone, MessageCircle, Menu, X, Sparkles, GraduationCap } from 'lucide-react';
+import { mentorsWhatsAppUrl } from '../data/mentorsData';
+import { trackLead } from '../lib/track';
 
 interface NavbarProps {
   onOpenEnrollment: (courseId?: string) => void;
+  subPage?: boolean;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment, subPage = false }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -19,7 +22,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  const base = subPage ? '/' : '';
+  const rawLinks = [
     { name: 'About', href: '#about' },
     { name: 'Philosophy', href: '#philosophy' },
     { name: 'Courses', href: '#courses' },
@@ -30,10 +34,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
     { name: 'Fee Plan', href: '#fee-enrollment' },
     { name: 'FAQ', href: '#faq' },
   ];
+  const navLinks = [
+    ...rawLinks.map((l) => ({ ...l, href: base + l.href })),
+    { name: 'Teachers Training', href: '/future-ready-mentors', highlight: true },
+  ];
+  const teachersWa = mentorsWhatsAppUrl('general');
 
   return (
     <>
       {/* Top micro-bar for urgent admissions notification & direct phone */}
+      {!subPage && (
       <div className="bg-slate-950 text-slate-300 text-xs py-1.5 px-4 border-b border-slate-800">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
@@ -66,6 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
           </div>
         </div>
       </div>
+      )}
 
       {/* Main Navbar */}
       <header
@@ -77,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Logo & Identity */}
-          <a href="#" className="flex items-center gap-2.5 focus:outline-none group">
+          <a href="/" className="flex items-center gap-2.5 focus:outline-none group">
             <AposLogo size={46} />
             <div className="flex flex-col">
               <span className="font-extrabold text-xl tracking-tight text-slate-900 group-hover:text-navy-700 leading-tight">
@@ -109,16 +120,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
           {/* Action CTAs */}
           <div className="hidden sm:flex items-center gap-2.5">
             <a
-              href={APOS_CONTACT.whatsappUrl}
+              href={subPage ? teachersWa : APOS_CONTACT.whatsappUrl}
+              onClick={() => subPage && trackLead('Future Ready Mentors - general - navbar')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors shadow-xs"
               title="Chat with Admissions on WhatsApp"
             >
               <MessageCircle className="w-4 h-4 text-emerald-600" />
-              <span>WhatsApp</span>
+              <span>{subPage ? 'Register' : 'WhatsApp'}</span>
             </a>
 
+            {!subPage && (
             <button
               onClick={() => onOpenEnrollment()}
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 active:scale-95 transition-all shadow-sm shadow-amber-400/20"
@@ -126,16 +139,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
               <GraduationCap className="w-4 h-4 text-slate-950" />
               <span>Join Courses</span>
             </button>
+            )}
           </div>
 
           {/* Mobile Menu Toggle */}
           <div className="flex lg:hidden items-center gap-2">
+            {!subPage && (
             <button
               onClick={() => onOpenEnrollment()}
               className="sm:hidden px-3 py-1.5 rounded-lg text-xs font-bold text-slate-950 bg-amber-400 shadow-xs"
             >
               Enroll
             </button>
+            )}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
@@ -167,6 +183,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
             </div>
 
             <div className="pt-2 border-t border-slate-100 space-y-2">
+              {!subPage && (
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
@@ -177,14 +194,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment }) => {
                 <GraduationCap className="w-4 h-4" />
                 <span>Join Our Courses (Enroll Now)</span>
               </button>
+              )}
               <a
-                href={APOS_CONTACT.whatsappUrl}
+                href={subPage ? teachersWa : APOS_CONTACT.whatsappUrl}
+                onClick={() => subPage && trackLead('Future Ready Mentors - general - navbar-mobile')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-700"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Chat on WhatsApp (0307-1639292)</span>
+                <span>{subPage ? 'Register on WhatsApp (0309-1639292)' : 'Chat on WhatsApp (0307-1639292)'}</span>
               </a>
             </div>
           </div>

@@ -17,6 +17,7 @@ import { Footer } from './components/Footer';
 import { CourseModal } from './components/CourseModal';
 import { EnrollmentModal } from './components/EnrollmentModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { FutureReadyMentors } from './components/FutureReadyMentors';
 import { Course } from './types';
 
 export default function App() {
@@ -35,6 +36,19 @@ export default function App() {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const isMentorsPage = typeof window !== 'undefined' && window.location.pathname.replace(/\/+$/, '') === '/future-ready-mentors';
+
+  if (isMentorsPage) {
+    return (
+      <div className="min-h-screen flex flex-col bg-white text-slate-900 font-sans selection:bg-amber-400 selection:text-slate-950">
+        <Navbar onOpenEnrollment={() => {}} subPage />
+        <main className="flex-1">
+          <FutureReadyMentors />
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-amber-400 selection:text-slate-950">
