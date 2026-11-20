@@ -195,7 +195,7 @@ export const FutureReadyMentors: React.FC = () => {
                 <div className="text-sm text-slate-700 mt-1">or Rs. 5,000 per month for 2 months (total Rs. 10,000)</div>
               </div>
               <ul className="space-y-2 mb-4 text-slate-700">
-                {['Complete teacher training with AI', 'First 3 months: 50-50 partnership with APOS', 'After that, you can run it as your own institute', 'Certificate included'].map((x) => (
+                {['Complete teacher training with AI', 'Complete course resources: PPTs, lectures and presentations', 'First 3 months: 50-50 partnership with APOS', 'After that, you can run it as your own institute', 'Certificate included'].map((x) => (
                   <li key={x} className="flex gap-2"><BadgeCheck className="w-5 h-5 text-teal-700 shrink-0 mt-0.5" />{x}</li>
                 ))}
               </ul>
@@ -215,7 +215,7 @@ export const FutureReadyMentors: React.FC = () => {
                 <div className="text-sm text-teal-50/90 mt-1">or Rs. 4,000 per month for 3 months (total Rs. 12,000)</div>
               </div>
               <ul className="space-y-2 mb-6">
-                {['Complete training, step by step', 'You run your own ads', 'You do your own marketing', 'Certificate included'].map((x) => (
+                {['Complete training, step by step', 'Complete course resources: PPTs, lectures and presentations', 'You run your own ads', 'You do your own marketing', 'Certificate included'].map((x) => (
                   <li key={x} className="flex gap-2"><BadgeCheck className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />{x}</li>
                 ))}
               </ul>
