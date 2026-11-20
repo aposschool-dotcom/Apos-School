@@ -37,7 +37,7 @@ export default function App() {
     }
   };
 
-  const isMentorsPage = typeof window !== 'undefined' && window.location.pathname.replace(/\/+$/, '') === '/future-ready-mentors';
+  const isMentorsPage = typeof window !== 'undefined' && window.location.pathname.replace(/\/+$/, '') === '/start-your-ai-school';
 
   if (isMentorsPage) {
     return (

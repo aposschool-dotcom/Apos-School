@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment, subPage = fals
   ];
   const navLinks = [
     ...rawLinks.map((l) => ({ ...l, href: base + l.href })),
-    { name: 'Teachers Training', href: '/future-ready-mentors', highlight: true },
+    { name: 'Teachers Training', href: '/start-your-ai-school', highlight: true },
   ];
   const teachersWa = mentorsWhatsAppUrl('general');
 
@@ -121,7 +121,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment, subPage = fals
           <div className="hidden sm:flex items-center gap-2.5">
             <a
               href={subPage ? teachersWa : APOS_CONTACT.whatsappUrl}
-              onClick={() => subPage && trackLead('Future Ready Mentors - general - navbar')}
+              onClick={() => subPage && trackLead('Start Your AI School - general - navbar')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors shadow-xs"
@@ -197,7 +197,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment, subPage = fals
               )}
               <a
                 href={subPage ? teachersWa : APOS_CONTACT.whatsappUrl}
-                onClick={() => subPage && trackLead('Future Ready Mentors - general - navbar-mobile')}
+                onClick={() => subPage && trackLead('Start Your AI School - general - navbar-mobile')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-700"

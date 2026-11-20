@@ -26,7 +26,7 @@ const WaButton: React.FC<{
       href={mentorsWhatsAppUrl(program)}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() => trackLead(`Future Ready Mentors - ${program} - ${where}`)}
+      onClick={() => trackLead(`Start Your AI School - ${program} - ${where}`)}
       className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-extrabold text-base active:scale-95 transition-all ${styles} ${className}`}
     >
       <MessageCircle className="w-5 h-5" />
@@ -50,7 +50,7 @@ const VideoPoster: React.FC = () => {
       <iframe
         className="w-full h-full"
         src={`https://www.youtube.com/embed/${MENTORS_VIDEO_ID}?autoplay=1&rel=0`}
-        title="Future Ready Mentors Program"
+        title="Start Your AI School"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
@@ -68,7 +68,7 @@ const VideoPoster: React.FC = () => {
       <span className="absolute top-2 left-2 sm:top-3 sm:left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-400 text-teal-950 text-[11px] sm:text-sm font-extrabold">
         <Video className="w-3.5 h-3.5" /> VIDEO
       </span>
-      <span className="relative text-xs sm:text-base font-bold tracking-widest uppercase text-amber-300">Future Ready Mentors Program</span>
+      <span className="relative text-xs sm:text-base font-bold tracking-widest uppercase text-amber-300">Start Your AI School</span>
       <span className="relative text-xl sm:text-4xl font-extrabold text-center leading-tight">Teach with AI.<br />Build your own classes.</span>
       {MENTORS_VIDEO_ID ? (
         <span className="relative mt-1 flex items-center justify-center">
@@ -92,7 +92,7 @@ export const FutureReadyMentors: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   useEffect(() => {
-    document.title = 'Future Ready Mentors Program | Teachers Training with AI | APOS School';
+    document.title = 'Start Your AI School | Teachers Training with AI | APOS School';
     window.scrollTo(0, 0);
   }, []);
 
@@ -107,7 +107,7 @@ export const FutureReadyMentors: React.FC = () => {
           <div className="text-center space-y-5 max-w-3xl mx-auto">
             <div className="inline-block px-4 py-1.5 rounded-full bg-amber-400 text-teal-950 text-sm font-extrabold">Teachers Training • APOS School</div>
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1]">
-              Future Ready <span className="text-amber-400">Mentors</span> Program
+              Start Your <span className="text-amber-400">AI School</span>
             </h1>
             <p className="text-lg sm:text-xl text-teal-50/95 leading-relaxed">
               Learn to teach with AI, and build your own online classes with the support of APOS School.
@@ -334,7 +334,7 @@ export const FutureReadyMentors: React.FC = () => {
       {/* 12. Final CTA */}
       <section className="py-16 bg-amber-400">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-5">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-teal-950">Ready to become a Future Ready Mentor?</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-teal-950">Ready to start your AI School?</h2>
           <p className="text-lg text-teal-950/80">Send us a message on WhatsApp. We will guide you step by step.</p>
           <WaButton program="general" where="final-cta" variant="teal" label="Register on WhatsApp" />
           <p className="text-sm font-semibold text-teal-950/80">{MENTORS_WHATSAPP_DISPLAY}</p>

@@ -1,4 +1,4 @@
-// Future Ready Mentors Program (Teachers Training) - content and settings.
+// Start Your AI School (Teachers Training) - content and settings.
 export const MENTORS_WHATSAPP_NUMBER = '923091639292';
 export const MENTORS_WHATSAPP_DISPLAY = '0309-1639292';
 
@@ -10,11 +10,11 @@ export type MentorsProgram = 'general' | 'partner' | 'full';
 
 const messages: Record<MentorsProgram, string> = {
   general:
-    'Assalam o Alaikum! I want to register for the Future Ready Mentors Program (Teachers Training). Please guide me.',
+    'Assalam o Alaikum! I want to register for Start Your AI School (Teachers Training). Please guide me.',
   partner:
-    'Assalam o Alaikum! I am interested in the Future Ready Mentors Program - PARTNER PROGRAM (2 months). Please guide me about registration.',
+    'Assalam o Alaikum! I am interested in Start Your AI School - PARTNER PROGRAM (2 months). Please guide me about registration.',
   full:
-    'Assalam o Alaikum! I am interested in the Future Ready Mentors Program - FULL PROGRAM (3 months, with ads and marketing). Please guide me about registration.',
+    'Assalam o Alaikum! I am interested in Start Your AI School - FULL PROGRAM (3 months, with ads and marketing). Please guide me about registration.',
 };
 
 export const mentorsWhatsAppUrl = (program: MentorsProgram) =>
