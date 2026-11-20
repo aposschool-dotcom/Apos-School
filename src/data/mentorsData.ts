@@ -42,7 +42,7 @@ export const MENTORS_FAQ = [
   },
   {
     q: 'Is the program online?',
-    a: 'Yes. You learn online, with live guidance from your mentor.',
+    a: 'Yes. Classes are live on Zoom, held at night at a feasible time. Every class is recorded and the recording is provided to you. You also get 24-hour group support. This is the same for both programs.',
   },
   {
     q: 'What is the difference between the two programs?',

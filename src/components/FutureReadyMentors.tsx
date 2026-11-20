@@ -222,6 +222,25 @@ export const FutureReadyMentors: React.FC = () => {
         </div>
       </section>
 
+      {/* Included in both programs */}
+      <section className="py-16 bg-teal-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <SectionTitle kicker="Included in Both Programs" title="What you get with every program" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { icon: Video, t: 'Live classes on Zoom', d: 'Online live classes, so you can ask questions and learn together.' },
+              { icon: Play, t: 'Every class recorded', d: 'A recording of every class is provided. Missed a class? Watch it later.' },
+              { icon: MessageCircle, t: '24-hour group support', d: 'A support group you can reach any time of the day.' },
+              { icon: ClipboardList, t: 'Step-by-step guidance', d: 'You are guided at every step, in simple words.' },
+              { icon: Target, t: 'Night-time classes', d: 'Classes are held at night at a feasible time, so you can handle your daytime responsibilities.' },
+              { icon: Handshake, t: 'Our experience, shared', d: 'The experience of two running institutes is passed on to you, and we support you until you are established.' },
+            ].map(({ icon: Icon, t, d }) => (
+              <Card key={t}><Icon className="w-8 h-8 text-teal-700 mb-3" /><div className="font-extrabold text-lg text-teal-950 mb-1">{t}</div><p className="text-slate-600">{d}</p></Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 7. How It Works */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -266,7 +285,7 @@ export const FutureReadyMentors: React.FC = () => {
               <div className="text-2xl font-extrabold text-teal-950">Ameer Popcornwala</div>
               <div className="font-semibold text-teal-700">Founder, APOS School</div>
               <p className="text-slate-700 leading-relaxed">
-                Ameer teaches adults and children online through APOS School, Pakistan's First Mobile Freelancing School. He believes in learning step by step, in a supportive group, in simple words.
+                In the last 4 years, Ameer has taught thousands of people. Today he runs 2 institutes where hundreds of students study every month. All of that experience is passed on to you in this program, step by step, in simple words.
               </p>
             </div>
           </div>
