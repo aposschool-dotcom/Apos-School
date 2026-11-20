@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnrollment, subPage = fals
   ];
   const navLinks = [
     ...rawLinks.map((l) => ({ ...l, href: base + l.href })),
-    { name: 'Teachers Training', href: '/start-your-ai-school', highlight: true },
+    { name: 'Start Your AI School', href: '/start-your-ai-school', highlight: true },
   ];
   const teachersWa = mentorsWhatsAppUrl('general');
 
