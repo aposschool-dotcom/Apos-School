@@ -229,8 +229,10 @@ export const FutureReadyMentors: React.FC = () => {
       <section className="py-16 bg-teal-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <SectionTitle kicker="Included in Both Programs" title="What you get with every program" />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
+              { icon: BookOpen, t: 'Complete course resources', d: 'All the classes you will teach are given to you as resources: PPTs, lectures and presentations.' },
+              { icon: GraduationCap, t: 'Online teaching, fully covered', d: 'You learn exactly how to teach online, from setup to running live classes.' },
               { icon: Video, t: 'Live classes on Zoom', d: 'Online live classes, so you can ask questions and learn together.' },
               { icon: Play, t: 'Every class recorded', d: 'A recording of every class is provided. Missed a class? Watch it later.' },
               { icon: MessageCircle, t: '24-hour group support', d: 'A support group you can reach any time of the day.' },

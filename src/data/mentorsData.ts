@@ -49,6 +49,10 @@ export const MENTORS_FAQ = [
     a: 'The Partner Program (2 months) trains you, and then APOS partners with you for the first 3 months as 50-50 partners. After that you can run it as your own institute. The Full Program (3 months) is our main program: we teach you everything, and you run your own ads and marketing yourself.',
   },
   {
+    q: 'Will I get course materials?',
+    a: 'Yes. All the classes you will teach are provided to you as complete resources: PPTs, lectures and presentations. You also learn how to teach online step by step. This is the same for both programs.',
+  },
+  {
     q: 'What are the fees?',
     a: 'Partner Program: Rs. 8,000 in one payment, or Rs. 5,000 per month for 2 months (total Rs. 10,000). Full Program: Rs. 10,000 in one payment, or Rs. 4,000 per month for 3 months (total Rs. 12,000).',
   },
