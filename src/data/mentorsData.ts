@@ -4,7 +4,7 @@ export const MENTORS_WHATSAPP_DISPLAY = '0309-1639292';
 
 // Put the YouTube video ID of the program video here (the part after v= or youtu.be/).
 // Leave empty until the video is ready: the poster will show "Video coming soon".
-export const MENTORS_VIDEO_ID = 'lvc-ERfnDlY';
+export const MENTORS_VIDEO_ID = 'OyZ9RFm3j6M';
 
 export type MentorsProgram = 'general' | 'partner' | 'full';
 
