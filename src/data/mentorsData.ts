@@ -46,7 +46,15 @@ export const MENTORS_FAQ = [
   },
   {
     q: 'What is the difference between the two programs?',
-    a: 'The Partner Program (2 months) trains you, and then APOS partners with you to help you run and grow your school. The Full Program (3 months) covers everything, together with ads and marketing.',
+    a: 'The Partner Program (2 months) trains you, and then APOS partners with you for the first 3 months as 50-50 partners. After that you can run it as your own institute. The Full Program (3 months) is our main program: we teach you everything, and you run your own ads and marketing yourself.',
+  },
+  {
+    q: 'What are the fees?',
+    a: 'Partner Program: Rs. 10,000 in one payment, or Rs. 6,000 per month for 2 months. Full Program: Rs. 15,000 in one payment, or Rs. 6,000 per month for 3 months.',
+  },
+  {
+    q: 'Can I get a refund?',
+    a: 'Yes, for the Partner Program. If you tell us within the first 10 days, you get a full refund. If, after learning, you feel it is not beneficial for you, you can get a 50% refund.',
   },
   {
     q: 'Do I get a certificate?',

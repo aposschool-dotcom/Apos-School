@@ -187,20 +187,32 @@ export const FutureReadyMentors: React.FC = () => {
               <div className="inline-flex self-start items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-extrabold mb-3"><Handshake className="w-4 h-4" /> 2 MONTHS</div>
               <h3 className="text-2xl font-extrabold text-teal-950 mb-2">Partner Program</h3>
               <p className="text-slate-600 mb-4 leading-relaxed">After your training, APOS partners with you to help you run and grow your school.</p>
-              <ul className="space-y-2 mb-6 text-slate-700">
-                {['Complete teacher training with AI', 'APOS partners with you after training', 'Help to run and grow your school', 'Certificate included'].map((x) => (
+              <div className="rounded-2xl bg-teal-50 border border-teal-200 p-4 mb-4">
+                <div className="text-3xl font-black text-teal-900">Rs. 10,000 <span className="text-sm font-bold text-slate-500">one payment</span></div>
+                <div className="text-sm text-slate-700 mt-1">or Rs. 6,000 per month (2 months)</div>
+              </div>
+              <ul className="space-y-2 mb-4 text-slate-700">
+                {['Complete teacher training with AI', 'First 3 months: 50-50 partnership with APOS', 'After that, you can run it as your own institute', 'Certificate included'].map((x) => (
                   <li key={x} className="flex gap-2"><BadgeCheck className="w-5 h-5 text-teal-700 shrink-0 mt-0.5" />{x}</li>
                 ))}
               </ul>
+              <div className="rounded-2xl bg-amber-50 border border-amber-200 p-4 mb-6 text-sm text-slate-700 leading-relaxed">
+                <div className="font-extrabold text-teal-950 mb-1">Refund policy</div>
+                Tell us within the first 10 days and get a full refund. If, after learning, you feel it is not beneficial for you, you can get a 50% refund.
+              </div>
               <WaButton program="partner" where="partner-card" label="Register for Partner Program" variant="teal" className="mt-auto" />
             </div>
             <div className="rounded-3xl bg-gradient-to-br from-teal-900 to-teal-700 text-white p-7 flex flex-col shadow-xl relative">
               <span className="absolute -top-3 right-6 bg-amber-400 text-teal-950 text-xs font-extrabold px-3 py-1 rounded-full">MOST COMPLETE</span>
               <div className="inline-flex self-start items-center gap-2 px-3 py-1 rounded-full bg-amber-400 text-teal-950 text-xs font-extrabold mb-3"><Megaphone className="w-4 h-4" /> 3 MONTHS</div>
               <h3 className="text-2xl font-extrabold mb-2">Full Program</h3>
-              <p className="text-teal-50/90 mb-4 leading-relaxed">Everything in one place, together with ads and marketing.</p>
+              <p className="text-teal-50/90 mb-4 leading-relaxed">Our main program. We teach you everything, and you run your own ads, your own marketing and your own work.</p>
+              <div className="rounded-2xl bg-white/10 border border-white/25 p-4 mb-4">
+                <div className="text-3xl font-black text-amber-400">Rs. 15,000 <span className="text-sm font-bold text-teal-100">one payment</span></div>
+                <div className="text-sm text-teal-50/90 mt-1">or Rs. 6,000 per month (3 months)</div>
+              </div>
               <ul className="space-y-2 mb-6">
-                {['Everything in the Partner Program', 'Ads training to reach new students', 'Marketing for your teaching brand', 'Certificate included'].map((x) => (
+                {['Complete training, step by step', 'You run your own ads', 'You do your own marketing', 'Certificate included'].map((x) => (
                   <li key={x} className="flex gap-2"><BadgeCheck className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />{x}</li>
                 ))}
               </ul>
