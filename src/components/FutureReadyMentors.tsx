@@ -182,6 +182,9 @@ export const FutureReadyMentors: React.FC = () => {
       <section id="programs" className="py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <SectionTitle kicker="Choose Your Program" title="Two programs, one goal" text="Both programs include a certificate." />
+          <div className="max-w-2xl mx-auto -mt-4 mb-8 rounded-2xl bg-amber-100 border border-amber-300 px-5 py-3 text-center text-sm sm:text-base font-bold text-amber-900">
+            Launch fee for the first batch. The fee may increase from the next batch.
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="rounded-3xl bg-white border-2 border-teal-200 p-7 flex flex-col shadow-sm">
               <div className="inline-flex self-start items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-extrabold mb-3"><Handshake className="w-4 h-4" /> 2 MONTHS</div>
