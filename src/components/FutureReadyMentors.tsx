@@ -246,6 +246,33 @@ export const FutureReadyMentors: React.FC = () => {
         </div>
       </section>
 
+      {/* Prospectus download */}
+      <section id="prospectus" className="py-16 bg-teal-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <SectionTitle light kicker="Prospectus" title="Read the complete prospectus" text="Everything in one place: what we teach, how we teach, both programs, fees and how to enroll. Available in English and Urdu." />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/APOS-Start-Your-AI-School-Prospectus-English.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-extrabold text-base bg-amber-400 text-teal-950 hover:bg-amber-300 active:scale-95 transition-all shadow-lg shadow-amber-400/30"
+            >
+              <BookOpen className="w-5 h-5" />
+              Prospectus in English (PDF)
+            </a>
+            <a
+              href="/APOS-Start-Your-AI-School-Prospectus-Urdu.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-extrabold text-base bg-white text-teal-900 hover:bg-amber-50 active:scale-95 transition-all"
+            >
+              <BookOpen className="w-5 h-5" />
+              اردو میں پروسپیکٹس (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* 7. How It Works */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
