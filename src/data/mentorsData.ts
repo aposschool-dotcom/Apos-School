@@ -46,7 +46,7 @@ export const MENTORS_FAQ = [
   },
   {
     q: 'What is the difference between the two programs?',
-    a: 'The Partner Program (2 months) trains you, and then APOS partners with you for the first 3 months as 50-50 partners. After that you can run it as your own institute. The Full Program (3 months) is our main program: we teach you everything, and you run your own ads and marketing yourself.',
+    a: 'The Partner Program (2 months) trains you, but marketing is not taught in it. APOS partners with you for the first 3 months as 50-50 partners and does the marketing itself. After that you can run it as your own institute. The Full Program (3 months) is our main program: we teach you everything, including marketing (how to promote yourself and bring students), and you run your own ads and marketing yourself.',
   },
   {
     q: 'Will I get course materials?',

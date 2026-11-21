@@ -195,7 +195,7 @@ export const FutureReadyMentors: React.FC = () => {
                 <div className="text-sm text-slate-700 mt-1">or Rs. 5,000 per month for 2 months (total Rs. 10,000)</div>
               </div>
               <ul className="space-y-2 mb-4 text-slate-700">
-                {['Complete teacher training with AI', 'Complete course resources: PPTs, lectures and presentations', 'First 3 months: 50-50 partnership with APOS', 'After that, you can run it as your own institute', 'Certificate included'].map((x) => (
+                {['Complete teacher training with AI', 'Complete course resources: PPTs, lectures and presentations', 'First 3 months: 50-50 partnership, and APOS does the marketing', 'Marketing is not taught in this program', 'After that, you can run it as your own institute', 'Certificate included'].map((x) => (
                   <li key={x} className="flex gap-2"><BadgeCheck className="w-5 h-5 text-teal-700 shrink-0 mt-0.5" />{x}</li>
                 ))}
               </ul>
@@ -209,19 +209,54 @@ export const FutureReadyMentors: React.FC = () => {
               <span className="absolute -top-3 right-6 bg-amber-400 text-teal-950 text-xs font-extrabold px-3 py-1 rounded-full">MOST COMPLETE</span>
               <div className="inline-flex self-start items-center gap-2 px-3 py-1 rounded-full bg-amber-400 text-teal-950 text-xs font-extrabold mb-3"><Megaphone className="w-4 h-4" /> 3 MONTHS</div>
               <h3 className="text-2xl font-extrabold mb-2">Full Program</h3>
-              <p className="text-teal-50/90 mb-4 leading-relaxed">Our main program. We teach you everything, and you run your own ads, your own marketing and your own work.</p>
+              <p className="text-teal-50/90 mb-4 leading-relaxed">Our main program. We teach you everything, including marketing, and you run your own ads, your own marketing and your own work.</p>
               <div className="rounded-2xl bg-white/10 border border-white/25 p-4 mb-4">
                 <div className="text-3xl font-black text-amber-400">Rs. 10,000 <span className="text-sm font-bold text-teal-100">one payment</span></div>
                 <div className="text-sm text-teal-50/90 mt-1">or Rs. 4,000 per month for 3 months (total Rs. 12,000)</div>
               </div>
               <ul className="space-y-2 mb-6">
-                {['Complete training, step by step', 'Complete course resources: PPTs, lectures and presentations', 'You run your own ads', 'You do your own marketing', 'Certificate included'].map((x) => (
+                {['Complete training, step by step', 'Complete course resources: PPTs, lectures and presentations', 'We teach you marketing: how to promote yourself and bring students', 'You run your own ads and marketing', 'Certificate included'].map((x) => (
                   <li key={x} className="flex gap-2"><BadgeCheck className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />{x}</li>
                 ))}
               </ul>
               <WaButton program="full" where="full-card" label="Register for Full Program" variant="yellow" className="mt-auto" />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Difference between the programs */}
+      <section id="difference" className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <SectionTitle kicker="Compare Programs" title="What is different?" text="Both programs teach you to teach with AI. The main difference is marketing." />
+          <div className="rounded-3xl overflow-hidden border border-teal-100 shadow-sm text-sm sm:text-base">
+            <div className="grid grid-cols-[1.1fr_1fr_1fr] bg-teal-900 text-white font-extrabold text-center">
+              <div className="p-3 sm:p-4 bg-white" />
+              <div className="p-3 sm:p-4">Partner Program<div className="text-xs font-semibold text-teal-200">2 months</div></div>
+              <div className="p-3 sm:p-4 bg-teal-700">Full Program<div className="text-xs font-semibold text-amber-300">3 months</div></div>
+            </div>
+            {[
+              { l: 'Teacher training with AI', a: 'Yes', b: 'Yes', d: false },
+              { l: 'Course resources', a: 'Yes', b: 'Yes', d: false },
+              { l: 'Zoom classes, recordings, 24-hour support', a: 'Yes', b: 'Yes', d: false },
+              { l: 'Certificate', a: 'Yes', b: 'Yes', d: false },
+              { l: 'Marketing training', a: 'Not taught', b: 'Taught in full: how to market yourself and bring students', d: true },
+              { l: 'Who does the marketing', a: 'APOS does it (first 3 months)', b: 'You do your own ads and marketing', d: true },
+              { l: 'Partnership', a: '50-50 with APOS for the first 3 months, then your own institute', b: 'Your own work, with our guidance', d: true },
+              { l: 'Fee', a: 'Rs. 8,000 or Rs. 5,000 x 2', b: 'Rs. 10,000 or Rs. 4,000 x 3', d: false },
+            ].map((r) => (
+              <div key={r.l} className={`grid grid-cols-[1.1fr_1fr_1fr] text-center border-t border-teal-100 ${r.d ? 'bg-amber-50' : 'bg-white'}`}>
+                <div className="p-3 sm:p-4 text-left font-extrabold text-teal-900">{r.l}</div>
+                <div className="p-3 sm:p-4 text-slate-700">{r.a}</div>
+                <div className="p-3 sm:p-4 text-slate-700">{r.b}</div>
+              </div>
+            ))}
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5 mt-6">
+            <Card><div className="font-extrabold text-lg text-teal-950 mb-1">Partner Program</div><p className="text-slate-600">We do not teach marketing in this program. During the first 3 months of the 50-50 partnership, APOS does the marketing itself. After that you can run it as your own institute.</p></Card>
+            <div className="rounded-3xl bg-teal-900 text-white p-6"><div className="font-extrabold text-lg mb-1">Full Program</div><p className="text-teal-50/90">We also teach you marketing: how to promote yourself, how to bring students, and everything that goes with it. Then you run your own ads and marketing.</p></div>
+          </div>
+          <p className="text-center text-slate-700 mt-6"><span className="font-extrabold text-teal-950">Which one is right for you?</span> Choose the Partner Program if you want APOS to handle the marketing with you. Choose the Full Program if you want to learn to do your own marketing and bring your own students.</p>
         </div>
       </section>
 
