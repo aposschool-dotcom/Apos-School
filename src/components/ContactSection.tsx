@@ -262,8 +262,8 @@ export const ContactSection: React.FC = () => {
                           {c.title}
                         </option>
                       ))}
-                      <option value="APOS Kids School (Age 8-15)">
-                        APOS Kids School (Age 8-15)
+                      <option value="APOS Kids School (Age 8-17)">
+                        APOS Kids School (Age 8-17)
                       </option>
                     </select>
                   </div>

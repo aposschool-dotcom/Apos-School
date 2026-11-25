@@ -164,13 +164,13 @@ export const KidsProgramLevels: React.FC = () => {
         {/* Bottom CTA */}
         <div className="text-center space-y-4">
           <a
-            href="/assets/documents/APOS-Kids-AI-Innovator-Program-Prospectus.pdf"
+            href="/assets/documents/APOS-Kids-AI-Innovator-Prospectus-Urdu.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-slate-300 text-slate-700 font-bold text-sm hover:border-slate-400 transition-colors"
           >
             <Download className="w-4 h-4" />
-            Download Full Prospectus (PDF)
+            اردو پراسپیکٹس ڈاؤن لوڈ کریں (PDF)
           </a>
           <p className="text-sm text-slate-500">
             Admission ke liye WhatsApp karein: <strong className="text-slate-800">{KIDS_ADMISSIONS_PHONE_FORMATTED}</strong>

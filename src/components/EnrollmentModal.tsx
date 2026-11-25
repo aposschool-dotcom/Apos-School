@@ -25,7 +25,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
   if (!isOpen) return null;
 
   const defaultCourse = preselectedCourseId === 'kids-school'
-    ? 'APOS Kids School (Age 8-15)'
+    ? 'APOS Kids School (Age 8-17)'
     : COURSES_DATA.find((c) => c.id === preselectedCourseId)?.title || (COURSES_DATA.find((c) => c.id === 'ai-digital-marketing') || COURSES_DATA[0]).title;
 
   const [name, setName] = useState('');
@@ -169,8 +169,8 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                       {c.title}
                     </option>
                   ))}
-                  <option value="APOS Kids School (Age 8-15)">
-                    APOS Kids School (Age 8-15)
+                  <option value="APOS Kids School (Age 8-17)">
+                    APOS Kids School (Age 8-17)
                   </option>
                 </select>
               </div>

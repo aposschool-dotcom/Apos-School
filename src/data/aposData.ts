@@ -183,7 +183,7 @@ export const COURSES_DATA: Course[] = [
 
 export const KIDS_PROGRAM = {
   title: 'Preparing The Next Generation For The AI World',
-  ageRange: '8 - 15 Years Old',
+  ageRange: '8 - 17 Years Old',
   tagline: "Don't let children only consume technology. Teach them to create with technology.",
   description: 'APOS Kids School is designed to foster critical thinking, curiosity, and technological fluency. Instead of mindlessly playing games or scrolling videos, kids learn to build digital games, design graphics, edit videos, and build simple web pages with AI.',
   pillars: [
