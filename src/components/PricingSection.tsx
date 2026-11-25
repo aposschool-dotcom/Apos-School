@@ -9,7 +9,8 @@ import {
   ShieldCheck,
   Zap,
   HelpCircle,
-  MessageCircle
+  MessageCircle,
+  BookOpen
 } from 'lucide-react';
 
 interface PricingSectionProps {
@@ -228,6 +229,41 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenEnrollment
 
           </div>
 
+        </div>
+
+        {/* Course prospectus (PDF) */}
+        <div id="prospectus" className="max-w-4xl mx-auto mt-8 p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          <div className="shrink-0 w-14 h-14 rounded-2xl bg-emerald-700 flex items-center justify-center">
+            <BookOpen className="w-7 h-7 text-amber-300" />
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <div className="text-lg font-extrabold text-slate-900">
+              Read the Full Course Prospectus
+            </div>
+            <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">
+              Everything in one place: what we teach, how classes work, the fee card and how to enroll. Available in English and Urdu.
+            </p>
+          </div>
+          <div className="w-full sm:w-auto shrink-0 flex flex-col gap-2">
+            <a
+              href="/APOS-AI-Digital-Marketing-Prospectus-English.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl font-bold text-sm bg-emerald-700 text-white hover:bg-emerald-800 active:scale-95 transition-all flex items-center justify-center gap-2"
+            >
+              <BookOpen className="w-4 h-4" />
+              Prospectus (English PDF)
+            </a>
+            <a
+              href="/APOS-AI-Digital-Marketing-Prospectus-Urdu.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl font-bold text-sm bg-amber-400 text-slate-950 hover:bg-amber-300 active:scale-95 transition-all flex items-center justify-center gap-2"
+            >
+              <BookOpen className="w-4 h-4" />
+              اردو پراسپیکٹس (PDF)
+            </a>
+          </div>
         </div>
 
         {/* Free YouTube Alternative for students who can't afford the fee */}
